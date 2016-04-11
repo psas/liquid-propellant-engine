@@ -1,0 +1,132 @@
+case = Nozzle_r2_1
+Query = "solution"
+facts = {
+plot_freq: 100
+boundary_plot_freq: 100000000
+newton_iter: 1
+plot_output: tmuu
+
+plot_output_exclusive: 
+
+p0: 0 pascal
+
+restart_freq: 1000
+restart_modulo: 1000
+print_freq: 100
+time_interval_check: 240
+interpolateMinStencilSize: 0
+initialConditions: <  p = 2.41316e+06, T = 300, M = [0.09,0,0] >
+
+modelName: Nozzle_r2_1
+dtmax: 0.0001 second
+
+time_integration: euler
+cflmax: 50000
+stop_time: 1e+09 second
+
+LDS_pressureBias: 0
+LDS_dissipationLimit: 1
+LDS_ducrosFactor: 0
+LDS_useUpwind: 0
+LDS_compFactor: 5
+LDS_nonSymmetricCoeff: 2
+LDS_nonSymmetricFactor: 1
+TclipMin: 5 kelvin
+
+TclipMax: 20000 kelvin
+
+PclipMin: 0 pascal
+
+rhoclipMax: 20000
+PclipMax: 1e+100 pascal
+
+timeScale: 10000
+pseudo_cflmax: 1000
+mindt: 1e-40
+urelax_factor: 1
+gauss_seidel_iter: 5
+plot_interval: -1 second
+
+boundary_plot_interval: -1 second
+
+inviscid_fjmat: roe
+inviscidFlux: default
+urelax: 0.1
+chemistry_model: air_1s0r
+eos_type: default
+thermodynamic_model: adaptive
+turbulence_model: none
+chemistry_jacobian: analytic
+useChemistryStabilizationTrick: no
+Tf: 0 kelvin
+
+transport_model: sutherland
+diffusion_model: default
+Sland: <a1=1.458e-06,a2=1.5,a3=110.4,k1=0,k2=0,k3=0,pr=0.75,usepr=1>
+turbulent_transport: <TurbulentPrandtlNumber=0.9,TurbulentSchmidtNumber=0.7>
+laminarSchmidtNumber: 0.9
+distance_function: projected
+tmuu_clip: 100000
+wall_law: <kappa=0.41,B=5.5,E=9.8>
+meanFreq: 1000
+exponentialMean: off
+probe_freq: 10
+face_extrapolation: rho-P
+Minf: 1
+etaT: 0.25
+PLimPC: 10
+plot_modulo: 100
+stop_iter: 4000
+fluidLinearSolver: sgs
+componentHierarchy: <>
+gmres_iter: 1
+gmres_ivm_iter: 30
+gmres_tol: 1
+LSGSRelaxation: 0.3
+LSGSAbsTol: 1e-10
+LSGSRelTol: 0.1
+LSGSMaxIter: 10
+LSGSPreconSteps: 3
+maxAdaptSteps: 0
+adaptMode: anisotropic
+adaptMinEdgeLength: 1e-06
+adaptGeometryLayers: 8
+adaptFaceFold: 1.5708
+adaptBalanceType: 0
+adaptStart: 100
+adaptSensitivity: 1
+coarsenSensitivity: 0.5
+turbo_walk_history_start: 9
+turbo_max_walking_warning: 500
+turboSearchGeometry: cartesian
+scalablePrescribedFile: BC_input.bin
+boundary_conditions: <BC_1=supersonicOutflow,BC_2=symmetry,BC_3=isentropicInflow(p0=350 psi,T0=5400 R),BC_4=symmetry,BC_5=viscousWall(adiabatic)>
+Kl: 1
+limiter: venkatakrishnan
+faceGradStencil: limited
+gradStencil: standard
+minVolume: -1
+centroid: wireframe
+gridCoordinates: axisymmetric
+grid_file_info: <>
+varPlotInfo: Beta=0:Macherror=0:NOerror=0:OHerror=0:P_k=0:Perror=0:ProcId=0:PtotError=0:Q=0:Rhoerror=0:Terror=0:a=1:alpha=0:bk=1:bpg=1:br=1:bt=1:btmuu=1:bv=1:cellMaxEdgeLength=0:cfl=0:cp=0:dist_noslip=0:dt=0:e=0:fd=0:fmu=0:force=1:gradP=0:h=0:helicity=0:htcoef=1:iblank=0:k=0:kconduct=0:ksp=1:les_tmuu=0:maxEdgeLen=0:mdot=1:mixture=1:muu=0:pTotal=0:pg=1:put=0:qdot=1:r=1:rLambda=0:re0_resid=0:refFlag=0:rho_resid=0:rk_resid=0:rt=0:rts=0:ru_resid=0:rw_resid=0:shockDetector=0:sst_tmuu=0:t=1:tTotal=0:tau=1:taumag=1:tkconduct=0:tmuu=1:uerror=0:v=1:vort_mag=0:vorticity=0:w=0:yplus=1
+volumeTag(Main): {([13236,13768])
+Main
+}
+Lref: 1
+boundaryName(BC_5): {([5542,5586])
+BC_5
+}
+boundaryName(BC_1): {([6595,6612])
+BC_1
+}
+boundaryName(BC_4): {([5587,6087])
+BC_4
+}
+boundaryName(BC_3): {()
+BC_3
+}
+boundaryName(BC_2): {([6088,6594])
+BC_2
+}
+}

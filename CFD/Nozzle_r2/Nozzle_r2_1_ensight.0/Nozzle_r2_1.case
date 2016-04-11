@@ -1,0 +1,12 @@
+FORMAT
+type:  ensight gold
+GEOMETRY
+model:  Nozzle_r2_1.geo
+VARIABLE
+scalar per node:	 alpha	alpha
+scalar per node:	 cellFaceAngle	cellFaceAngle
+scalar per node:	 cellShearTwist	cellShearTwist
+scalar per node:	 cellTwist	cellTwist
+scalar per node:	 cellVol	cellVol
+scalar per node:	 nonconvex	nonconvex
+scalar per node:	 volumeRatio	volumeRatio

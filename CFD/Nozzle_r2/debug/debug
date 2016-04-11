@@ -1,0 +1,105 @@
+reading modules in from file '/u/travisk/locichem/Loci-Linux-x86_64-mpic++-rel-4-0-beta-3/lib/fvm_m.so'
+ boundaries identified as: BC_5 BC_4 BC_3 BC_2 BC_1
+geom_cells = ([13236,15435])
+ghost_cells = ([15441,19825])
+cells = ([13236,15435][15441,19825])
+boundary_faces = ([4487,8871])
+ci_faces = ([4487,8871])
+precleaning rules that cannot be scheduled based on given facts:
+eliminating face2node->boundary_nodalw_sum<-face2node->(boundary_nodalw_sum,pos),facecenter,CONSTRAINT(ci,no_symmetry_BC) due to no_symmetry_BC
+eliminating face2node->boundary_node<-CONSTRAINT(ci,no_symmetry_BC) due to no_symmetry_BC
+eliminating LSBWeights,LSWeights<-(boundary_map,lower,upper)->area,boundary_map->facecenter,cellStencil->cellcenter,cellcenter due to cellStencil
+eliminating ci->firstOrderCells<-ci->vol,CONSTRAINT(ci->vol,ref->firstOrder_BCoption) due to firstOrder_BCoption
+eliminating minPg<-Pambient due to Pambient
+precleaning rules that cannot be scheduled based on given facts:
+eliminating face2node->boundary_nodalw_sum<-face2node->(boundary_nodalw_sum,pos),facecenter,CONSTRAINT(ci,no_symmetry_BC) due to no_symmetry_BC
+eliminating face2node->boundary_node<-CONSTRAINT(ci,no_symmetry_BC) due to no_symmetry_BC
+eliminating LSBWeights,LSWeights<-(boundary_map,lower,upper)->area,boundary_map->facecenter,cellStencil->cellcenter,cellcenter due to cellStencil
+eliminating ci->firstOrderCells<-ci->vol,CONSTRAINT(ci->vol,ref->firstOrder_BCoption) due to firstOrder_BCoption
+eliminating minPg<-Pambient due to Pambient
+unused variables = ()
+iteration_variables = ()
+time to execute internal query 0.00887299
+precleaning rules that cannot be scheduled based on given facts:
+eliminating face2node->boundary_nodalw_sum<-face2node->(boundary_nodalw_sum,pos),facecenter,CONSTRAINT(ci,no_symmetry_BC) due to no_symmetry_BC
+eliminating face2node->boundary_node<-CONSTRAINT(ci,no_symmetry_BC) due to no_symmetry_BC
+eliminating LSBWeights,LSWeights<-(boundary_map,lower,upper)->area,boundary_map->facecenter,cellStencil->cellcenter,cellcenter due to cellStencil
+eliminating boundary_map->Wf_l,lower->Wf_r,upper->Wf_l<-(boundary_map,lower,upper)->area,boundary_map->facecenter,cellcenter,lower->cl->cellcenter,upper->cr->cellcenter,CONSTRAINT(axisymmetricCoordinateModel,geom_cells) due to axisymmetricCoordinateModel
+eliminating ci->firstOrderCells<-ci->vol,CONSTRAINT(ci->vol,ref->firstOrder_BCoption) due to firstOrder_BCoption
+eliminating minPg<-Pambient due to Pambient
+unused variables = ()
+iteration_variables = ()
+ initial_vars = ()
+Time taken for dmm graph decoration = 0.00670433 seconds 
+Time taken for chomping subgraph searching = 0.00240302 seconds 
+Time taken for graph scheduling = 0.00216603 sceonds 
+Time taken for graph processing  = 0.0513599  seconds 
+Time taken for existential_analysis  = 0.00226593  seconds 
+Time taken for create execution schedule = 0.00203395 seconds 
+time to create schedule 0.0901952
+writing file output/grid_pos.0_Nozzle_r2_1
+calling write grid topology
+writing file output/nonconvex_sca.0_Nozzle_r2_1
+writing file output/alpha_sca.0_Nozzle_r2_1
+writing file output/cellFaceAngle_sca.0_Nozzle_r2_1
+writing file output/cellTwist_sca.0_Nozzle_r2_1
+writing file output/cellShearTwist_sca.0_Nozzle_r2_1
+writing file output/cellVol_sca.0_Nozzle_r2_1
+writing file output/volumeRatio_sca.0_Nozzle_r2_1
+------------------------------------------------------------------------------
+Timing Categories:
+ -- Computation:   0.0740731
+ -- Communication: 0
+ -- Control:       0.000254154
+ -- totalTime:     0.0743272
+
+------------------------------------------------------------------------------
+Top 10 Most Expensive Steps:
+0- rule: topo<-(boundary_map,lower,upper)->face2node->pos,boundary_map->ref->boundary_names,modelName
+ --- Time: 0.0213242 28.7% of total, time per entity: 9.6928e-06
+ --- Type: Computation
+------------------------------------------------------------------------------
+1- rule: topo<-modelName,pos,CONSTRAINT(pos)
+ --- Time: 0.00503016 6.8% of total, time per entity: 1.12105e-06
+ --- Type: Computation
+------------------------------------------------------------------------------
+2- rule: topo<-cell2nodeMax(nonconvex),modelName,CONSTRAINT(pos)
+ --- Time: 0.00491309 6.7% of total, time per entity: 1.09496e-06
+ --- Type: Computation
+------------------------------------------------------------------------------
+3- rule: topo<-cell2nodeMax(alpha_cell),modelName,CONSTRAINT(pos)
+ --- Time: 0.00409985 5.6% of total, time per entity: 9.13716e-07
+ --- Type: Computation
+------------------------------------------------------------------------------
+4- rule: topo<-cell2nodeMax(cellVolRatio),modelName,CONSTRAINT(pos)
+ --- Time: 0.00402403 5.5% of total, time per entity: 8.96819e-07
+ --- Type: Computation
+------------------------------------------------------------------------------
+5- rule: topo<-cell2nodeMin(volume),modelName,CONSTRAINT(pos)
+ --- Time: 0.00398612 5.4% of total, time per entity: 8.88371e-07
+ --- Type: Computation
+------------------------------------------------------------------------------
+6- rule: topo<-cell2nodeMax(cellFaceAngle),modelName,CONSTRAINT(pos)
+ --- Time: 0.00386906 5.3% of total, time per entity: 8.62281e-07
+ --- Type: Computation
+------------------------------------------------------------------------------
+7- rule: topo<-area,facecenter,modelName,CONSTRAINT(ci->cellcenter)
+ --- Time: 0.003865 5.2% of total, time per entity: 8.81415e-07
+ --- Type: Computation
+------------------------------------------------------------------------------
+8- rule: topo<-cell2nodeMax(cellTwist),modelName,CONSTRAINT(pos)
+ --- Time: 0.00374103 5.1% of total, time per entity: 8.33748e-07
+ --- Type: Computation
+------------------------------------------------------------------------------
+9- rule: topo<-cell2nodeMax(cellShearTwist),modelName,CONSTRAINT(pos)
+ --- Time: 0.00352216 4.8% of total, time per entity: 7.84969e-07
+ --- Type: Computation
+------------------------------------------------------------------------------
+----- Time per category:
+Group chomp time = 0.00400829, 5.4% of total
+Group chomp-overhead time = 4.79221e-05, 0.1% of total
+------------------------------------------------------------------------------
+Total scheduler bean-counting memory: 0 bytes
+Top 10 Steps with Most Scheduler Memory:
+Time taken for execution of the schedule = 0.0743539 seconds 
+Time to execute query for 'report' is 0.165515
