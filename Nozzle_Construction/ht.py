@@ -15,14 +15,14 @@ from math import sqrt, pi
 #%matplotlib inline
 
 #constants
-T_chamber = 3500 #or whatever, chamber temp
+T_chamber = 5485 #or whatever, chamber temp
 k = 1.4 #or whatever, ratio of specific heats
-mdot = 1 #choked mass flow rate (e.g. mdot at throat)
-R =  1 #specific gas constant (from CEA)
+mdot = 1.03 #choked mass flow rate (e.g. mdot at throat)
+R =  1544/24.029 #specific gas constant (from CEA)
 p_exit = 14.4 #exit pressure (assuming optimal expansion)
-p_chamber_ns = 375 # or whatever, total chamber pressure
-r0 = 1
-rt = 0.3
+p_chamber_ns = 350 # or whatever, total chamber pressure
+rt = 0.394
+r0 = rt * 10
 
 #init. arrays
 n = 0 
@@ -30,8 +30,8 @@ it = 1000 #number of sampled points
 T = [T_chamber] #temperature
 p = np.linspace(p_chamber_ns, p_exit, it) #pressure
 V = [R*T[n]/p[n]] #specific vol
-v = [0] #velocity
-Mach = [0] #Mach number
+Mach = [0.06] #Mach number
+v = [Mach[n]*sqrt(2*k*R*T[0])] #velocity
 A = [mdot*V[n]/v[n]] #cross-sectional area
 x = [0] #length
 #Also add Pr, Re, Nu, h, etc, etc...
@@ -44,14 +44,22 @@ while n < it:
 	v.append(sqrt(2*k*R*T[0]/(k-1)*(1-(p[n]/p[0])**((k-1)/k))))
 	Mach.append(v[n]/(sqrt(k*R*T[n])))
 
-	if Mach[n] < 1:
+	if Mach[n] <= 1:
 		A.append(mdot*V[n]/v[n])
 		x.append(-sqrt(A[n]/pi) + r0)
-		xn = x[n]
+		nn = n
 	else:
 		A.append(mdot*V[n]/v[n])
-		x.append((sqrt(A[n]/pi) - rt)/2 + xn)	
+		x.append((sqrt(A[n]/pi) - rt)/2 + x[nn-390])	#need a weird fudge factor, no idea why
 	n += 1
+
+#print(nn)
+
+#check if these number match, otherwise debug
+print("Mach at exit = %f" % Mach[-1])
+print("Pressure at exit = %f" % p[-1])
+print("Temperature at exit = %f" % T[-1])
+print("Velocity at exit = %f" % v[-1])
 
 plt.plot(x, p) #really should be a plot vs x
 plt.title("yada yada vs. thingamajig")
