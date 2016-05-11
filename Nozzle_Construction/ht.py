@@ -21,8 +21,8 @@ mdot = 1.03 #choked mass flow rate (e.g. mdot at throat)
 R =  1544/24.029 #specific gas constant (from CEA)
 p_exit = 14.4 #exit pressure (assuming optimal expansion)
 p_chamber_ns = 350 # or whatever, total chamber pressure
-rt = 0.394
-r0 = rt * 10
+rth = 0.394
+r0 = rth * 10
 
 #init. arrays
 n = 0 
@@ -46,11 +46,13 @@ while n < it:
 
 	if Mach[n] <= 1:
 		A.append(mdot*V[n]/v[n])
-		x.append(-sqrt(A[n]/pi) + r0) #random linear models of radius for converging and diverging sections
+		x.append(-sqrt(A[n]/pi) + r0)
 		nn = n
+		At = A[nn]
+		rt = sqrt(At/pi)
 	else:
 		A.append(mdot*V[n]/v[n])
-		x.append((sqrt(A[n]/pi) - rt)/2 + x[nn-390])	#need a weird fudge factor, no idea why
+		x.append((sqrt(A[n]/pi) - rt)/2 + x[nn])
 	n += 1
 
 #print(nn)
@@ -60,6 +62,7 @@ print("Mach at exit = %f" % Mach[-1])
 print("Pressure at exit = %f" % p[-1])
 print("Temperature at exit = %f" % T[-1])
 print("Velocity at exit = %f" % v[-1])
+print("Radius at throat c.f {} = {}".format(rth, rt))
 
 plt.plot(x, p) #really should be a plot vs x
 plt.title("yada yada vs. thingamajig")
