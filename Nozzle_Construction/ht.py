@@ -49,7 +49,7 @@ while n < it:
 #		x.append("some other defined function of A")	
 	n += 1
 
-plt.plot(A, T)
+plt.plot(A, T) #really should be a plot vs x
 plt.title("yada yada vs. thingamajig")
 plt.ylabel("whichever variable")
 plt.xlabel("x [in or m or whatever]")
