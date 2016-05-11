@@ -46,7 +46,7 @@ while n < it:
 
 	if Mach[n] <= 1:
 		A.append(mdot*V[n]/v[n])
-		x.append(-sqrt(A[n]/pi) + r0)
+		x.append(-sqrt(A[n]/pi) + r0) #random linear models of radius for converging and diverging sections
 		nn = n
 	else:
 		A.append(mdot*V[n]/v[n])
