@@ -11,8 +11,8 @@ import matplotlib.pyplot as plt
 from math import sqrt
 
 #jupyter magic words
-%config InlineBackend.figure_formats=['svg']
-%matplotlib inline
+#%config InlineBackend.figure_formats=['svg']
+#%matplotlib inline
 
 #constants
 T_chamber = 3500 #or whatever, chamber temp
@@ -24,12 +24,12 @@ p_chamber_ns = 375 # or whatever, total chamber pressure
 
 #init. arrays
 n = 0 
-it = 1000 #number of sampled points
+it = 10 #number of sampled points
 T = [T_chamber] #temperature
 p = np.linspace(p_chamber_ns, p_exit, it) #pressure
 V = [R*T[n]/p[n]] #specific vol
-v = [] #velocity
-Mach =  [] #Mach number
+v = [0] #velocity
+Mach = [0] #Mach number
 A = [] #cross-sectional area
 x = [] #length
 #Also add Pr, Re, Nu, h, etc, etc...
@@ -43,13 +43,13 @@ while n < it:
 	Mach.append(v[n]/(sqrt(k*R*T[n])))
 	A.append(mdot*V[n]/v[n])
 	#Also add Pr, Re, Nu, h, etc, etc...
-	if Mach[n] < 1:
-		x.append("some defined function of A")
-	else:
-		x.append("some other defined function of A")	
+#	if Mach[n] < 1:
+#		x.append("some defined function of A")
+#	else:
+#		x.append("some other defined function of A")	
 	n += 1
 
-plt.plot(x, T)
+plt.plot(A, T) #really you want to plot vs. x
 plt.title("yada yada vs. thingamajig")
 plt.ylabel("whichever variable")
 plt.xlabel("x [in or m or whatever]")
