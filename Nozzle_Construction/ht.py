@@ -24,13 +24,13 @@ p_chamber_ns = 375 # or whatever, total chamber pressure
 
 #init. arrays
 n = 0 
-it = 10 #number of sampled points
+it = 1000 #number of sampled points
 T = [T_chamber] #temperature
 p = np.linspace(p_chamber_ns, p_exit, it) #pressure
 V = [R*T[n]/p[n]] #specific vol
 v = [0] #velocity
 Mach = [0] #Mach number
-A = [] #cross-sectional area
+A = [mdot*V[n]/v[n]] #cross-sectional area
 x = [] #length
 #Also add Pr, Re, Nu, h, etc, etc...
 
@@ -49,7 +49,7 @@ while n < it:
 #		x.append("some other defined function of A")	
 	n += 1
 
-plt.plot(A, T) #really you want to plot vs. x
+plt.plot(A, T)
 plt.title("yada yada vs. thingamajig")
 plt.ylabel("whichever variable")
 plt.xlabel("x [in or m or whatever]")
