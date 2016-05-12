@@ -54,14 +54,15 @@ while n < it:
 		x.append((r[n]-r[nn])/3 + x[nn]) #placeholder linear function
 	n += 1
 
-#these numbers should match w/ the actual geometry
+#these numbers should match w/ old outputs when the actual geometry is input
 print("Mach number at exit = %f" % Mach[-1])
 print("Pressure at throat = %f [psi]" % p[nn])
 print("Temperature at exit = %f [units?]" % T[-1])
 print("Velocity at exit = %f [ft/s]" % v[-1])
 rth_simd = "%.4f" % r[nn]
 print("Radius at throat = {} (c.f {}) [units?]".format(rth_simd, rth))
-print(x[-1])
+print("Expansion ratio = {} (c.f {})".format(A[-1]/A[nn], '3-ish?'))
+print("Contraction ratio = {} (c.f {})".format(A[0]/A[nn], '10-ish?'))
 
 #plots
 f, (ax1, ax2, ax3, ax4) = plt.subplots(4, sharex=True)
