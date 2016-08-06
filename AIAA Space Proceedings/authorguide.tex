@@ -1,0 +1,404 @@
+
+
+
+\maketitle
+\end{Verbatim}
+
+\subsection{Headings}
+
+AIAA Technical Conferences style defines 3 levels of section
+headings:
+\begin{description}
+ \item Level 1 heading (\verb"\section"): bold, larger font, centered,
+       and numbered with Roman numerals.
+ \item Level 2 heading (\verb"\subsection"): bold, flush left, and
+       numbered with capital letters.  No opening paragraph indentation.
+ \item Level 3 heading (\verb"\subsubsection"): italic, flush left, and
+       numbered with Arabic numbers (e.g., 1, 2, 3).  No opening
+       paragraph indentation.
+\end{description}
+
+\subsection{Abstract}
+
+The abstract should appear at the beginning of your paper.
+It should be one paragraph long (not an introduction) and complete in
+itself (no reference numbers).
+It should indicate subjects dealt with in the paper and state the
+objectives of the investigation.
+Newly observed facts and conclusions of the experiment or argument
+discussed in the paper must be stated in summary form; readers should
+not have to read the paper to understand the abstract.
+
+\subsection{Footnotes and References}
+
+Footnotes, where they appear, should be placed above the 1-inch margin at
+the bottom of the page.
+To insert footnotes, use \verb|\footnote{}| as normal.
+Footnotes are formatted automatically in \verb|aiaa.cls|, but if
+another medium is used, they should appear in as superscript lower case
+letters.
+When adding notes to tables, e.g., as accommodated by the
+\pkg{threeparttable} package, the symbols are down by hand and should be
+in the sequence, *, $\dagger$, $\ddagger$, $\mathsection$,
+$\mathparagraph$, $\|$, **, $\dagger\dagger$, and so forth.
+This sequence should beginning anew with each table.
+
+List and number all bibliographical references at the end of the paper.
+Corresponding superscript numbers are used to cite references in the
+text using the \verb|\cite{}| command,\cite{sutton:85ar} unless the
+citation is an integral part of the sentence (e.g., ``It is shown in
+Ref.~\citen{miner:75ncr} that\ldots[.]'') 
+or follows a mathematical expression: ``$A2 + B = C$
+(Ref.~\citen{wirin:90cp}).''
+For this case, the command, \verb|\citen{}| is used.
+\cite{*}% to load all refences for demonstration purposes which follow
+Multiple citations are sorted and punctuated automatically through the
+\cls{aiaa-tc}'s use of the \pkg{overcite}. 
+Separate reference numbers are shown with
+commas\cite{sutton:85ar,miner:75ncr,turner:64a} and ranges are 
+separated by an en-dash.\cite{sutton:85ar,miner:75ncr,wirin:90cp}
+Reference citations in the text should be in numerical order, which is
+assured by using \textsc{Bib}\TeX.
+
+In the reference list, give all authors' names; do not use ``et al.''
+unless there are six authors or more.
+Papers that have not been published should be cited as ``unpublished'';
+papers that have been submitted or accepted for publication should be
+cited as ``submitted for publication.''
+Private communications and personal Web sites should appear as footnotes
+rather than in the reference list.
+
+References should be cited according to the standard publication
+reference style.
+(For examples, see the ``References'' section of this template.)
+This is facilitated by the Bib\TeX\ database and a style file, \file{aiaa.bst}.
+As a rule, all words are capitalized except for articles, conjunctions,
+and prepositions of four letters or fewer.
+Names and locations of publishers should be listed; month and year
+should be included for reports and papers.
+For papers published in translation journals, please give the English
+citation first, followed by the original foreign language citation.
+
+\subsection{Images, Figures, and Tables}
+
+All artwork, captions, figures, graphs, and tables will be reproduced
+exactly as submitted.
+Be sure to position any figures, tables, graphs, or pictures as you want
+them printed.
+AIAA is not responsible for incorporating your figures, tables,
+etc.%
+\footnote{Company logos and identification numbers are not permitted on
+  your illustrations.}
+
+% an experiment with wrapfig -- read caveats documented in wrapfig.sty
+\begin{wrapfigure}{R}{0.5\linewidth}
+ \includegraphics{figure_magnet}
+ \caption{Magnetization as a function of applied field, which has
+   borders so thick that they overwhelm the data and for some reason the
+   ordinate label is rotated 90 degrees to make it difficult to
+   read. This figure also demonstrates the dangers of using a bitmap
+   as opposed to a vector image.}
+ \label{f:magnetic_field}
+\end{wrapfigure}
+
+Place figure captions below all figures; place table titles above the
+tables.%
+\footnote{Please do not include captions as part of the figure image
+itself.}
+If your figure has multiple parts, include the labels ``a),'' ``b),''
+and so on, below each subfigure and above the figure caption.
+This can be accomplished with the \pkg{subfigure} package.
+Please verify that the figures and tables you mention in the text
+actually exist by using \LaTeX's \verb|\label| and \verb|\ref| mechanisms
+and verifying that there are no undefined references during typesetting.
+
+When citing a figure in the text, use ``figure'' as ``Fig., often used
+to refer to graphics, is an ugly abbreviation and is not worth the two
+spaces saved.''\cite{tufte:83bk}
+Do not abbreviate ``table'' either.
+Each different type of illustration (i.e., figures, tables, or
+images) should be numbered sequentially with relation to other
+illustrations of the same type.
+
+Figure axis labels are often a source of confusion.
+Use words rather than symbols.
+As in the example to the right, write the quantity ``Magnetization''
+rather than just ``M.''
+Do not enclose units in parenthesis, but rather separate them from the
+preceding text by commas.
+Do not label axes only with units.
+As in figure~\ref{f:magnetic_field}, for example, write ``Magnetization,
+A/m'' or ``Magnetization, A m-1,'' not just ``A/m.''
+Do not label axes with a ratio of quantities and units.
+For example, write ``Temperature, K,'' not ``Temperature/K.''
+
+Multipliers can be especially confusing.
+Write ``Magnetization, kA/m'' or ``Magnetization, 103 A/m.''
+Do not write ``Magnetization (A/m) $\times$ 1000'' because the reader
+would not then know whether the top axis label in
+figure~\ref{f:magnetic_field} meant 16000~A/m or 0.016~A/m.
+Figure labels must be legible, approximately 8--12 point type.
+Use of the \pkg{psfrag} package can facilitate this, but it makes
+generating a PDF version of your paper difficult.
+
+Figures and tables are referred to as `Floats' in \LaTeX, reflecting
+their floating nature.
+They are typically numbered whether or not they have a caption and they
+are floated to the first available position near the first reference to
+that figure/table within the text.
+This is accomplished by placing the figure/table environment after
+their first reference.
+The environment can even be placed mid-sentence as long as \LaTeX's
+comment character, \%, is used properly to prevent a paragraph break or
+extra spaces.
+By default, floats are placed at the top of the first available page,
+the bottom of the page, or one a page consisting entirely of floats.
+
+An example of coding a standard \verb|{figure}| is given below:
+\begin{Verbatim}
+ \begin{figure}
+   \includegraphics{magetic_field}
+   \caption{Magnetization as a function of applied field, which has
+     borders so thick that they overwhelm from the data.}
+   \label{f:magnetic_field}
+ \end{figure}
+\end{Verbatim}
+
+\begin{table}
+ \begin{center}
+  \begin{threeparttable}
+   \caption{This is an example of a \pkg{threeparttable} which uses the
+     \pkg{dcolumn} package to allow for columns to be aligned on decimal
+     points.}
+   \label{t:threepart}
+   \begin{tabular}{lcdd}
+    First head\tnote{*}  &
+    Second head &
+    \multicolumn{1}{c}{Third head} &
+    \multicolumn{1}{c}{$V_M(r)$} \\\hline
+    center & doctor &  0.2  & 10.55 \\  
+    tab    & dentist &  0.15 & 33.12 \\ 
+    worse  & man\tnote{\ensuremath{\dagger}} & 10.58 & 45.10 \\ 
+    better & home & 43.9  & 12.34 \\
+   \end{tabular}
+   \begin{tablenotes}
+    \item[*] This is a table footnote, which to span multiple lines, has
+      been greatly extended in length contrary to reason.
+    \item[\ensuremath{\dagger}] A much shorter table footnote.
+   \end{tablenotes}
+  \end{threeparttable}
+ \end{center}
+\end{table}
+Tables with footnotes, such as table~\ref{t:threepart},
+can be coded using the \pkg{threeparttable} package as follows:
+\begin{Verbatim}
+ \begin{table}
+  \begin{center}
+   \begin{threeparttable}
+    \caption{This is an example of table caption.}
+    \label{t:wordtable}
+    \begin{tabular}{ccdd}
+     First head\tnote{a}  &
+     Second head\tnote{b} &
+     \multicolumn{1}{c}{Third head} &
+     \multicolumn{1}{c}{$V_M(r)$} \\\hline
+     Left & Word entries &  0.2  & 10.55 \\  
+     Left & Word entries &  0.15 & 33.12 \\ 
+     Left & Word entries & 10.58 & 45.10 \\ 
+     Left & Word entries & 43.9  & 12.34 \\
+    \end{tabular}
+    \begin{tablenotes}
+     \item[a] This is a table footnote, which to span multiple lines, has
+              been greatly extended in length contrary to reason.
+     \item[b] A much shorter table footnote.
+    \end{tablenotes}
+   \end{threeparttable}
+  \end{center}
+ \end{table}
+\end{Verbatim}
+
+\subsection{Equations, Numbers, Symbols, and Abbreviations}
+
+Equations are centered and numbered consecutively, with equation
+numbers in parentheses flush right, as in Eq.~\ref{e:function}.
+\begin{equation}
+ \label{e:function}
+ \int_{0}^{r_{2}} F(r,\varphi)\,dr\,d\varphi =
+    \left[ \sigma r_{2}/(2\mu_{0}) \right] \cdot
+    \int_{0}^{\infty} \exp(-\rho|z_{j}-z_{i}|) \lambda^{-1} 
+\end{equation}
+Equation~\ref{e:function} is coded as below:
+\begin{Verbatim}
+ \begin{equation}
+  \label{e:function}
+  \int_{0}^{r_{2}} F(r,\varphi)\,dr\,d\varphi =
+     \left[ \sigma r_{2}/(2\mu_{0}) \right] \cdot
+     \int_{0}^{\infty} \exp(-\rho|z_{j}-z_{i}|) \lambda^{-1}
+ \end{equation}
+\end{Verbatim}
+A sample equation is included below, formatted using the preceding
+instructions.
+To make your equation more compact, you can use the solidus ($/$), the
+exp function, or appropriate exponents.
+Use parentheses to avoid ambiguities in denominators.
+\begin{equation}
+  \label{e:displace}
+  \mathbf{J}_i\cdot\Delta\underline{x}_{i+1}=-\underline{f}_i
+\end{equation}
+\nomenclature{$J$}{Jacobian Matrix}
+\nomenclature[b$i$]{$i$}{Variable number}
+\nomenclature[g$\Delta$]{$\Delta x$}{Variable displacement vector}
+\nomenclature{$f$}{Residual value vector}
+\nomenclature{$x$}{Variable value vector}
+\begin{equation}
+  \label{e:newton}
+  F=m\alpha
+\end{equation}
+\nomenclature{$F$}{Force, N}
+\nomenclature{$m$}{Mass, kg}
+\nomenclature[g$\alpha$]{$\alpha$}{Acceleration, m/s\textsuperscript{2}}
+
+The \verb|fleqnarray| environment is used to display a sequence of
+equations or inequalities. It is very much like a three-column
+\verb|array| environment, with consecutive rows separated by
+\verb|\\| and consecutive items within a row separated by an \&.
+\begin{eqnarray}
+&&\sum_{i\in H} p^0\cdot w^{0i}=\sum_i M^i (p^0) =
+  \sum_i\left[p^0\cdot r^i + \sum_j \alpha^{ij} (p^0\cdot
+  y^{0j})\right]\nonumber\\
+&&{\qquad}= p^0 \cdot \sum_i r^i + p^0 \cdot \sum_i
+\sum_i \alpha^{ij}
+\end{eqnarray}
+An equation number is placed on every line unless that line has a
+\verb|\nonumber| command.
+
+Be sure that the symbols in your equation are defined before the
+equation appears, or immediately following.
+In this case the \pkg{nomencl} package is used to automatically generate
+the nomenclature section.
+
+Italicize symbols ($T$ might refer to temperature, but T is the unit
+Tesla).
+Refer to ``Eq. (1),'' not ``(1)'' or ``equation (1)'' except at the
+beginning of a sentence: ``Equation (1) is phat.''
+Equations can be labeled other than ``Eq.'' should they represent
+inequalities, matrices, or boundary conditions.
+If what is represented is really more than one equation, the
+abbreviation ``Eqs.'' can be used.
+
+Define abbreviations and acronyms the first time they are used in the
+text, even after they have already been defined in the abstract.
+Very common abbreviations such as AIAA, SI, ac, and dc do not have to be
+defined.
+Abbreviations that incorporate periods should not have spaces: write
+``P.R.,'' not ``P. R.''
+Delete periods between initials if the abbreviation has three or more
+initials; e.g., U.N. but ESA.\@
+Do not use abbreviations in the title unless they are unavoidable (for
+instance, ``AIAA'' in the title of this article).
+
+\subsection{General Grammar and Preferred Usage}
+
+Use only one space after periods or colons. Hyphenate complex
+modifiers: ``zero-field-cooled magnetization.''
+Avoid dangling participles, such as, ``Using Eq. (1), the potential was
+calculated.''
+[It is not clear who or what used Eq. (1).]
+Write instead ``The potential was calculated using Eq. (1),'' or ``Using
+Eq. (1), we calculated the potential.''
+
+Use a zero before decimal points: ``0.25,'' not ``.25.''
+Use ``cm$^3$,'' not ``cc.''
+Indicate sample dimensions as ``0.1 cm $\times$ 0.2 cm,'' not ``0.1
+$\times$ 0.2~cm$^2$.''
+The preferred abbreviation for ``seconds'' is ``s,'' not ``sec.''
+Do not mix complete spellings and abbreviations of units: use
+``Wb/m$^2$'' or ``webers per square meter,'' not ``webers/m$^2$.''
+When expressing a range of values, write ``7 to 9'' or ``7--9,'' not
+``7~9.''
+
+A parenthetical statement at the end of a sentence is punctuated
+outside of the closing parenthesis (like this).
+(A parenthetical sentence is punctuated within parenthesis.)
+In American English, periods and commas are placed within quotation
+marks, like ``this period.''
+Other punctuation is ``outside''! Avoid contractions; for example, write
+``do not'' instead of ``don't.''
+The serial comma is preferred: ``A, B, and C'' instead of ``A, B and C.''
+
+If you wish, you may write in the first person singular or plural and
+use the active voice (``I observed that\ldots'' or ``We observed that\ldots''
+instead of ``It was observed thatÖ'').
+Remember to check spelling.
+If your native language is not English, please ask a native
+English-speaking colleague to proofread your paper.
+
+The word ``data'' is plural, not singular (i.e., ``data are,'' not ``data
+is'').
+The subscript for the permeability of vacuum $\mu_0$ is zero, not a
+lowercase letter ``oo.''
+The term for residual magnetization is ``remanence''; the adjective is
+``remanent''; do not write ``remnance'' or ``remnant.''
+The word ``micrometer'' is preferred over ``micron'' when spelling out
+this unit of measure.
+A graph within a graph is an ``inset,'' not an ``insert.''
+The word ``alternatively'' is preferred to the word ``alternately''
+(unless you really mean something that alternates).
+Use the word ``whereas'' instead of ``while'' (unless you are referring
+to simultaneous events).
+Do not use the word ``essentially'' to mean ``approximately'' or
+``effectively.''
+Do not use the word ``issue'' as a euphemism for ``problem.''
+When compositions are not specified, separate chemical symbols by
+en-dashes; for example, ``NiMn'' indicates the intermetallic compound
+Ni$_{0.5}$Mn$_{0.5}$ whereas ``Ni--Mn'' indicates an alloy of some
+composition Ni$_{x}$Mn$_{1-x}$.
+
+Be aware of the different meanings of the homophones ``affect'' (usually
+a verb) and ``effect'' (usually a noun), ``complement'' and
+``compliment,'' ``discreet'' and ``discrete,'' ``principal'' (e.g.,
+``principal investigator'') and ``principle'' (e.g., ``principle of
+measurement''). Do not confuse ``imply'' and ``infer.''
+
+Prefixes such as ``non,'' ``sub,'' ``micro,'' ``multi,'' and ``ultra''
+are not independent words; they should be joined to the words they
+modify, usually without a hyphen.
+There is no period after the ``et'' in the abbreviation ``et al.''
+The abbreviation ``i.e.,'' means ``that is,'' and the abbreviation
+``e.g.,'' means ``for example'' (these abbreviations are not
+italicized).
+An excellent source of more detailed style and formatting instructions
+can be found in the AIAA style guide, {\it AIAA Style} (available from AIAA
+upon request).
+
+\section{Conclusion}
+
+A conclusion section is not required, though it is preferred.
+Although a conclusion may review the main points of the paper, do not
+replicate the abstract as the conclusion.
+A conclusion might elaborate on the importance of the work or suggest
+applications and extensions.%
+\footnote{The conclusion section is the last section of
+  the paper that should be numbered.
+  The appendix (if present), acknowledgment, and references should be
+  listed without numbers.}
+
+\section*{Appendix}
+
+An appendix, if needed, should appear before the acknowledgments.
+Use the 'starred' version of the \verb|\section| commands to avoid
+section numbering.
+
+\section*{Acknowledgments}
+
+The preferred spelling of the word ``acknowledgment'' in American
+English is without the ``e'' after the ``g.''
+Avoid expressions such as ``One of us (S.B.A.) would like to thank\ldots[.]''
+Instead, write ``F. A. Author thanks\ldots[.]''
+Sponsor and financial support acknowledgments are also to be listed in
+the acknowledgments section.
+
+% produces the bibliography section when processed by BibTeX
+\bibliography{bibtex_database}
+\bibliographystyle{aiaa}
+

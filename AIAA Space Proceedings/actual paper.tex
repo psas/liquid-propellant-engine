@@ -1,0 +1,148 @@
+\typeout{}\typeout{If latex fails to find aiaa-tc, read the README file!}
+%
+
+
+\documentclass[]{aiaa-tc}% insert '[draft]' option to show overfull boxes
+
+ \title{Development of Open-source Method for Low Cost Rapid Prototyping of Regeneratively Cooled Bi-propellant Liquid Fuel Rocket Engines}
+
+ \author{
+  First A. Author%
+    \thanks{Job Title, Department, Address, and AIAA Member Grade.}
+  \ and Second B. Author\thanksibid{1}\\
+  {\normalsize\itshape
+   Business or Academic Affiliation, City, Province, Zipcode, Country}\\
+  \and
+  Third C. Author%
+   \thanks{Job Title, Department, Address, and AIAA Member Grade.}\\
+  {\normalsize\itshape
+  Business or Academic Affiliation, City, Province, Zipcode, Country}
+ }
+
+ % Data used by 'handcarry' option if invoked
+ \AIAApapernumber{YEAR-NUMBER}
+ \AIAAconference{Conference Name, Date, and Location}
+ \AIAAcopyright{\AIAAcopyrightD{YEAR}}
+
+ % Define commands to assure consistent treatment throughout document
+ \newcommand{\eqnref}[1]{(\ref{#1})}
+ \newcommand{\class}[1]{\texttt{#1}}
+ \newcommand{\package}[1]{\texttt{#1}}
+ \newcommand{\file}[1]{\texttt{#1}}
+ \newcommand{\BibTeX}{\textsc{Bib}\TeX}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+The complexity and cost of building a liquid fuel rocket engine typically makes such devices unobtainable for a majority of parties interested in their construction. Until recently, manufacturing processes and techniques limited the geometries available to the designer and rendered such engines cost prohibitive as options for inexpensive orbital space flight. Advances in additive manufacturing technologies provide the potential to prototype complex geometries on a lower budget and with shorter lead times which would be considered unobtainable with traditional manufacturing methods. Furthermore, bipropellant liquid fuels offer many complex engineering considerations; the full analysis of which may not be within the design ability of many amateur builds. It is therefore advantageous to develop techniques for additive manufacturing rapid prototyping to make the study of bipropellant fuels more accessible. A mechanical engineering senior capstone team at Portland State University, developed an open-source method for quickly prototyping small bipropellant liquid fuel rocket engines with regenerative cooling using additive manufacturing.
+\end{abstract}
+
+
+
+
+
+\section*{Nomenclature} %keeping dummy variables for guidance
+
+\begin{tabbing}
+  XXXXX \= \kill% this line sets tab stop
+  $PSAS$ \> Portland State Aerospace Society\\
+  $DMLS$ \> Direct Metal Laser Sintering\\
+  $LFRE$ \> Liquid Fuel Rocket Engine\\
+  $LOX$ \> Liquid Oxygen\\
+
+  $\Delta x$ \> Variable displacement vector \\
+  $\alpha$ \> Acceleration, m/s\textsuperscript{2} \\[5pt]
+  \textit{Subscript}\\
+  $i$ \> Variable number \\
+ \end{tabbing}
+
+
+\section{Introduction}
+
+%Ideas listed below
+%Introduce PSAS and it’s goals and open-sourceness and how this lead to our student capstone project. 
+The Portland State Aerospace Society (PSAS) is an engineering student group at Portland State University dedicated to low-cost, open-source technology development for high powered rockets and avionics systems. The group’s stated long term goal is to place a 1 kg cubesat into low Earth orbit with their own launch vehicle. One step needed to achieve this goal is to transition the current rocket design of a solid engine to a liquid fuel engine. Explored herein is the process of designing and testing a 500 lbf thrust bipropellant engine using liquid oxygen (LOX) and ethanol as propellants. The design process is documented in jupyter python notebooks contained within Github. This keeps the process open source and allows any external designer choose their own inputs ranging from size of thrust.....
+
+%Describe jupyter notebook, what it is, how it works
+%Describe how in order to design a rocket engine we had to develop a process for designing rocket engines. This process uses python notebooks with editable inputs that output parametric curves for 3D modeling software to create 3D printing files for DMLS which results in rapid prototyping of 3D printed engines.
+%Include something that introduces pintle injectors
+%Applications of our work
+
+\subsection{Background}
+%Do we need a subsection for background? Or just one part for the intro?
+
+\section{Top Level Design}
+%Go a little deeper into what was introduced
+%Describe our jupyter notebooks inputs and outputs
+%Open-Source
+%Go more into the process mentioned in the introduction python to curves to 3d modeling to DMLS
+%Describe basic engine design and layout, regenerative cooling and pintle injector
+%Picture of Engine Assembly
+
+\section{Engine}
+%How the engine notebook works and the engine design concepts (John already has a great start on this)
+%Picture of 3D printed engine
+
+Engine design is prohibitive for many amateur designers who might otherwise have a great deal of ability to contribute to low cost access to orbital space flight. The design process is cumbersome, and oftentimes does not present a clear path to a final product with a successful fire.
+%which a designer may follow which will resultin a final product that will successfully fire.
+Engineering tools are not generally available, and an understanding of the full process may be lacking. Due to the aforementioned constraints, it is therefore desirable for the amateur to have available to them a design tool which will aid in generating a geometry capable of withstanding the stresses of a steady-state engine, while simultaneously producing a desired thrust.
+
+The LFRE Nozzle design document accepts as inputs desired engineering requirements; namely desired thrust, as well as material properties, and subsequently aids the designer in generating an acceptable geometry for those requirements. After inputs are provided, the basic geometry of the nozzle is determined. Subsequent analysis determines the cooling capacity of the fuel used in regenerative passages. This process results in parametric equations which justify the chamber and nozzle contours, the inner and outer surfaces of the regenerative cooling passages, and the external surface of the nozzle. The parametric equations may then be used to generate a printable 3D model in combination with additive manufacturing processes.
+
+Regenerative cooling passages constructed using the parametric equations are of uniform cross-sectional area when evaluated perpendicular to the flow direction of the fuel (or normal to the surface of the nozzle contour). This allows for unit cross sectional area, which may then be later be scaled as a means of controlling the velocity of the fuel in a particular regenerative passageway, thereby allowing for better control of wall temperatures at any given axial position along the nozzle. Scaling functions may be added as a design tool at a later date, but initial functions could resemble a half period of a sine function to scale along a desired length of nozzle in order to give a smooth and continuous scaling pattern along a given section of the nozzle. Because the nozzle is parameterized, any parametric equation justifying a nozzle section may simply be multiplied by a scaling function.
+
+After generating parametric equations, a more detailed heat transfer analysis is undertaken. Properties are evaluated along finite sections of the wall contour, and compared to the capacity of the specified coolant, with the intent of giving motivation to a designer that a nozzle geometry is capable of reaching a thermal equilibrium while remaining below the yield of the engine material.
+
+The major outputs of the jupyter notebook is therefore a unique set of parametric equations with which a liquid fuel rocket engine may be created which utilizes regenerative and film cooling to protect the engine material from yield due to thermal and mechanical stresses during thermally steady state combustion.
+Correction factors are implemented into the jupyter notebook to address discrepancies between theoretical values for various parameters, and their empirically tested values. The primary correction factor to be addressed from a test of an engineering prototype should be considered the adiabatic wall temperature of the hot exhaust gas due to film cooling. Models for film cooling are not well established, and it is important to determine a correction factor for a particular engine in order to accurately predict the resulting physical properties of subsequent iterations of engine prototypes. This will allow a designer to accurately predict the flow rates and pressure drops of propellants with enough accuracy to design a propellant feed system capable of delivering required pump head to an engine without the need to iterate through many costly test stand designs.
+
+Engine features:
+
+The  engine is intended to produce 500 lbf. It is manufactured by a DMLS 3D printing process out of a high temperature aluminum alloy (elaborate on the alloy? xx ). Fuel is delivered by a separately designed system, and should be capable of delivering approximately 500 psi of pump head to the fuel manifold, which is located at the base of the nozzle bell. Upon collection, the fuel is directed through regenerative cooling channels, the number of which are calculated automatically by a chosen Reynolds number and designer selected aspect ratio. These cooling channels have unit cross sectional area along the entire length of the channel. Improvements to the design process would solve instead for a constant hydraulic diameter, rather than cross sectional area, in order to give the designer a unit flow velocity along the channel, which may then be scaled as desired around areas of high heat transfer such as the throat.
+
+The fuel is then delivered to a collection chamber. Care should be taken to produce no overhang angles greater than the maximum overhang angle of the particular 3D printing process which is being utilized within the larger geometries of the collection chamber. The designer should consider the print orientation, and may be forced to extend the length of a collection chamber to accommodate a maximum overhang angle. The presented prototype was printed with a maximum overhang angle of 45 degrees, and the design resulted in no very little use of support material; none of which is necessary for inaccessible, or difficult to access internal geometries.
+
+Upon collection, the fuel is redirected to film cooling ports; of which the size and quantity are optimized by the jupyter notebook. Remaining fuel is then utilized as propellant, which is directed around a pintle injector described in section xx. After injection and combustion the propellants are directed through a De’laval nozzle, the design of which is described in huang (reference huang parabolic bell approximation xx ).
+
+
+\section{Pintle Injector}
+
+\subsection{Injector} % I essentially just took this from our capstone paper please butcher it 
+There are several possibilities for the selection of the injector. Most injectors types are capable of atomizing the fuel in a stable and efficient manner so performance characteristics are not the driving factor in design selection. A 500 lbf thrust has low fuel mixing requirements, as long as the mass flow rates and momentum ratios are satisfied, many different design ideas will work. Swirl injectors, as well as impinging jet injectors were concepts included in considerations; however, these designs are not modular. For testing purposes it would be necessary to redesign and reprint the nozzle for every iteration of the injector or deal with the complexity of sealing the injector at the regenerative cooling channel interface. As a result a more modular design  was selected. A pintle injector is fixed to the engine via bolts or machine screws, so if alterations are necessary for test procedures it is relatively easy to remove and replace. Additionally, pintle injectors are less susceptible to combustion instabilities and are potentially throttleable; features that will benefit future larger engine designs. 
+
+The pintle injector is responsible for delivering the liquid oxygen to the combustion chamber. The oxygen travels down the center of the pintle and leaves the small LOX holes in the tip at a 90 degree angle to the original direction of travel. The liquid oxygen leaving the pintle collides with the fuel and creates an atomized mixture. The oxygen and fuel ports have been sized to ensure the momentum of the fuel and oxygen are similar and the trajectory of the mixture is $\sim$45 degrees.
+
+Using the ipython notebook in Github, radii for the LOX holes as well as the size of the annulus were determined off inputs for pressure, inner and outer mass flow rates. The dimensions of the radii were adjusted according to  recommended blockage factor (BF) and total momentum ratio (TMR) values that would shift according to radii adjustments. 
+
+
+
+
+%How the pintle injector notebook works and the pintle injector concepts
+%SolidWorks Picture of pintle injector
+
+\section{Ongoing and Future Work}
+%This used to be "Results" but we don't have any
+%Building and testing the pintle
+%Cold flow testing the regenerative cooling channels
+%Completing ignition system and instrumentation to test fire the rocket
+
+\section{Conclusion}
+%To the knowledge of the authors, no other open-source method for quickly prototyping liquid fuel engine exists. The first iteration of this engine will be tested on a test stand sometime in 2016. 
+%3D printed engines are just beginning to be used and tested by industry, and few have been tested in flight. Historically, there have not been many advances in liquid engine technology since X, but additive manufacturing has opened the door for new advances, low cost, and amateur groups access.
+
+
+\section*{Appendix}
+
+
+
+\section*{Acknowledgments}
+
+\section{References}
+%not sure if we need this but I added it
+
+
+
+\end{document}
