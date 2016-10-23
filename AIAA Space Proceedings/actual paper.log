@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.3.16)  22 AUG 2016 10:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.3.16)  23 OCT 2016 14:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -281,10 +281,10 @@ LaTeX Warning: Citation `CEARUN' on page 2 undefined on input line 146.
 LaTeX Warning: Citation `parametricEQs' on page 2 undefined on input line 148.
 
 Package epstopdf Info: Source file: <figures/mach.eps>
-(epstopdf)                    date: 2016-08-22 17:49:38
+(epstopdf)                    date: 2016-10-23 20:59:46
 (epstopdf)                    size: 181382 bytes
 (epstopdf)             Output file: <figures/mach-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-08-22 10:52:02
+(epstopdf)                    date: 2016-10-23 14:02:25
 (epstopdf)                    size: 11034 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/mach-eps-converted
 -to.pdf figures/mach.eps>
@@ -293,7 +293,7 @@ runsystem(repstopdf --outfile=figures/mach-eps-converted-to.pdf figures/mach.ep
 s)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <figures/mach-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-08-22 10:52:15
+(epstopdf)                    date: 2016-10-23 14:02:31
 (epstopdf)                    size: 11034 bytes.
 <figures/mach-eps-converted-to.pdf, id=16, 510.90875pt x 395.4775pt>
 File: figures/mach-eps-converted-to.pdf Graphic file (type pdf)
@@ -303,10 +303,10 @@ Package pdftex.def Info: figures/mach-eps-converted-to.pdf used on input line 1
 68.
 (pdftex.def)             Requested size: 140.9252pt x 109.08553pt.
 Package epstopdf Info: Source file: <figures/temp.eps>
-(epstopdf)                    date: 2016-08-22 17:49:42
+(epstopdf)                    date: 2016-10-23 20:59:50
 (epstopdf)                    size: 243531 bytes
 (epstopdf)             Output file: <figures/temp-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-08-22 10:52:03
+(epstopdf)                    date: 2016-10-23 14:02:25
 (epstopdf)                    size: 12179 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/temp-eps-converted
 -to.pdf figures/temp.eps>
@@ -315,7 +315,7 @@ runsystem(repstopdf --outfile=figures/temp-eps-converted-to.pdf figures/temp.ep
 s)...executed safely (allowed).
 
 Package epstopdf Info: Result file: <figures/temp-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-08-22 10:52:15
+(epstopdf)                    date: 2016-10-23 14:02:32
 (epstopdf)                    size: 12179 bytes.
 
 <figures/temp-eps-converted-to.pdf, id=17, 512.91624pt x 395.4775pt>
@@ -326,10 +326,10 @@ Package pdftex.def Info: figures/temp-eps-converted-to.pdf used on input line 1
 69.
 (pdftex.def)             Requested size: 140.92326pt x 108.65707pt.
 Package epstopdf Info: Source file: <figures/hx.eps>
-(epstopdf)                    date: 2016-08-22 17:49:38
+(epstopdf)                    date: 2016-10-23 20:59:44
 (epstopdf)                    size: 244937 bytes
 (epstopdf)             Output file: <figures/hx-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-08-22 10:52:03
+(epstopdf)                    date: 2016-10-23 14:02:26
 (epstopdf)                    size: 12496 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/hx-eps-converted-t
 o.pdf figures/hx.eps>
@@ -338,7 +338,7 @@ runsystem(repstopdf --outfile=figures/hx-eps-converted-to.pdf figures/hx.eps)..
 .executed safely (allowed).
 
 Package epstopdf Info: Result file: <figures/hx-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-08-22 10:52:16
+(epstopdf)                    date: 2016-10-23 14:02:32
 (epstopdf)                    size: 12496 bytes.
 
 <figures/hx-eps-converted-to.pdf, id=18, 509.905pt x 395.4775pt>
@@ -432,7 +432,7 @@ live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "actual paper.pdf" (7 pages, 19058485 bytes).
+Output written on "actual paper.pdf" (7 pages, 19058487 bytes).
 PDF statistics:
  159 PDF objects out of 1000 (max. 8388607)
  107 compressed objects within 2 object streams
