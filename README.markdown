@@ -1,6 +1,14 @@
-# Design For A Liquid-Fueled Rocket Engine
+# PSAS Liquid-Propellant Engine (LPE) Designs
 
-Repo for the 2015-2016 liquid engine MME capstone.
+## Overview
+
+PSAS is building a LPE because (1) it's cool and (2) it's part of our 100 km rocket project. This project started with a 2015-2016 ME capstone of a 2kN 1/4 scale engine and is building towards a planned 6 kN flight enginer for LV4.
+
+## Latest information
+
+TBD
+
+## 2015-2016 liquid engine MME capstone.
 
 Project files to develop a 500 lbf thrust 3D-printed liquid fuel rocket engine with LOX and IPA propellants. Here are a few helpful links:
 
