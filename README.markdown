@@ -6,7 +6,17 @@ PSAS is building a LPE because (1) it's cool and (2) it's part of our 100 km roc
 
 ## Latest information
 
-TBD
+## Summer 2019 creation of the 500lbf heat sink engine
+
+TBA
+
+## 2018-2019 Test Stand Integration MME capstone
+
+Project files analyzing and machining the 500lbf thrust printed engine.
+
+Quick links to folders:
+* [CT scanning](https://github.com/psas/liquid-propellant-engine/tree/master/2kN/CT%20scanning) <br>
+* [Machining](https://github.com/psas/liquid-propellant-engine/tree/master/2kN/Machining)
 
 ## 2015-2016 liquid engine MME capstone.
 
