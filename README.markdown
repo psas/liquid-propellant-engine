@@ -2,13 +2,28 @@
 
 ## Overview
 
-PSAS is building a LPE because (1) it's cool and (2) it's part of our 100 km rocket project. This project started with a 2015-2016 ME capstone of a 2kN 1/4 scale engine and is building towards a planned 6 kN flight enginer for LV4.
+PSAS is building a LPE because (1) it's cool and (2) it's part of our 100 km rocket project. This project started with a 2015-2016 ME capstone of a 2kN 1/4 scale engine and is building towards a planned 9 kN engine for the LV-4 vehicle.
 
 ## Latest information
 
-## Summer 2019 creation of the 500lbf heat sink engine
+## 2020-2021 creation of the 2kN heat sink engine
 
-TBA
+Regenerative cooling is hard, particularly when we don't know if the basic engine design is viable. For this reason (and because we already bought some expensive parts), we are moving back to a ~2kN preliminary design. In various documents, this engine may be referred to as:
+
+* 2kN Heat Sink Engine
+* Minimum Viable Produce (MVP) engine
+* Test Stand Demonstration Engine
+
+The engine is intended to fire for no more than several seconds on the PSAS test stand. The hope is this engine will provide validation for the rocket design, manufacturing learnings and provide experience with a full-up hot fire test.
+
+[Documentation for this engine] (https://github.com/psas/liquid-propellant-engine/tree/master/2kN%20Heat%20Sink%20Engine)
+
+
+## 2019-2020 Test Stand/Engine ME Capstone
+
+Designed a 6kN heat sink engine... and then found out it was going to be too expensive to print and destroy this engine. Recommending moving back to 2kN for cost purposes.
+
+[6kN Heat Sink Engine] (https://github.com/psas/liquid-propellant-engine/tree/master/6kN%20Heat%20Sink%20Engine)
 
 ## 2018-2019 Test Stand Integration MME capstone
 
