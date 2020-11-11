@@ -16,14 +16,14 @@ Regenerative cooling is hard, particularly when we don't know if the basic engin
 
 The engine is intended to fire for no more than several seconds on the PSAS test stand. The hope is this engine will provide validation for the rocket design, manufacturing learnings and provide experience with a full-up hot fire test.
 
-[Documentation for this engine] (https://github.com/psas/liquid-propellant-engine/tree/master/2kN%20Heat%20Sink%20Engine)
+[Documentation for this engine](https://github.com/psas/liquid-propellant-engine/tree/master/2kN%20Heat%20Sink%20Engine)
 
 
 ## 2019-2020 Test Stand/Engine ME Capstone
 
 Designed a 6kN heat sink engine... and then found out it was going to be too expensive to print and destroy this engine. Recommending moving back to 2kN for cost purposes.
 
-[6kN Heat Sink Engine] (https://github.com/psas/liquid-propellant-engine/tree/master/6kN%20Heat%20Sink%20Engine)
+[6kN Heat Sink Engine](https://github.com/psas/liquid-propellant-engine/tree/master/6kN%20Heat%20Sink%20Engine)
 
 ## 2018-2019 Test Stand Integration MME capstone
 
