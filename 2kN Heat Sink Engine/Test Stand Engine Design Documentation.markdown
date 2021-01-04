@@ -10,7 +10,7 @@ In an attempt to wrangle some design requirements into a single location, this d
 * Chamber Pressure: 350psia (2.41 MPa)
 * Exit Pressure: 14.7 psia (0.101 MPa)
 * Oxidizer: Liquid Oxygen
-* Fuel: Isopropyl alcohol, 70% by volume
+* Fuel: Isopropyl alcohol, 70% by volume *(Note: this is 64.8% IPA, 35.2% water by mass, according to my calculations)*
 
 ## Injector Parameters ##
 
