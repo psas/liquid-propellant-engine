@@ -46,3 +46,8 @@ Fluid momentum is mdot*V, as explained in Jacob Tiller's pintle documentation. T
 ## Strategy ##
 
 CAD design strategy here...
+
+## Reference
+
+The "Jacob Tiller" document referenced above can be found [HERE](https://github.com/psas/pintle-injector/blob/master/Pintle%20Injector%20Design%20Documentation/00%20-%20Pintle%20Injector%20Theory%2C%20Design%2C%20and%20Testing.ipynb)
+
