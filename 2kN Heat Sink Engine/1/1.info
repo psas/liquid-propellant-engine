@@ -1,0 +1,117 @@
+
+    System Info
+                Status:   Solver is finished.
+                Product:   Flow Simulation 2020 4.0. Build: 4995
+                Computer name:   MCAE24
+                User name:   cstarker
+                Processors:   Intel(R) Xeon(R) CPU E3-1240 v6 @ 3.70GHz
+                Memory:   16315 MB / 9203 MB
+                Operating system:   Windows 10 (or higher) (Version 10.0.18363)
+                CAD version:   SOLIDWORKS 2020 SP4.0
+                CPU speed:   3696 MHz
+
+    General Info
+                Model:   FullStack.SLDASM
+                Project name:   Project(1)
+                Project path:   N:\Downloads\GitHub\liquid-propellant-engine\2kN Heat Sink Engine\1
+                Units system:   IPS (in-lb-s)
+                Analysis type:   Internal
+                Exclude cavities without flow conditions :   On
+                Coordinate system:   Global coordinate system
+                Reference axis:   X
+
+    Physical Features
+                Heat conduction in solids:   Off
+                Time dependent:   Off
+                Gravitational effects:   Off
+                Flow type:   Laminar and turbulent
+                Cavitation:   Off
+                High Mach number flow:   Off
+                Free surface:   Off
+                Default roughness:   0 microinch
+                Default wall conditions:   Adiabatic wall
+
+    Computational Domain
+
+        Size
+                X min:   0.39 in
+                X max:   6.15 in
+                Y min:   5.83 in
+                Y max:   8.73 in
+                Z min:   2.86 in
+                Z max:   8.83 in
+                X size:   5.76 in
+                Y size:   2.90 in
+                Z size:   5.97 in
+
+    Calculation Mesh
+
+        Basic Mesh Dimensions
+                Number of cells in X:   18
+                Number of cells in Y:   10
+                Number of cells in Z:   18
+
+        Number Of Cells
+                Cells:   6365
+                Fluid cells:   6365
+                Irregular cells:   0
+                Trimmed cells:   0
+                Maximum refinement level:   2
+
+    Goals
+
+        Surface Goals
+
+            Pintle (Oxidizer) Exit Total Pressure
+                Type:   Surface Goal
+                Goal type:   Total Pressure
+                Calculate:   Average value
+                Faces:   Face<7>@Pintle-1, Face<9>@Pintle-1, Face<8>@Pintle-1, Face<1>@Pintle-1, Face<3>@Pintle-1, Face<2>@Pintle-1, Face<4>@Pintle-1, Face<6>@Pintle-1, Face<10>@Pintle-1, Face<5>@Pintle-1
+                Coordinate system:   Global coordinate system
+                Use in convergence :   On
+
+             Annulus (Fuel) Exit Average Total Pressure
+                Type:   Surface Goal
+                Goal type:   Total Pressure
+                Calculate:   Average value
+                Faces:   Face<1>@LID13-1
+                Coordinate system:   Global coordinate system
+                Use in convergence :   On
+
+            Annulus (Fuel) Exit Mass Flow Rate
+                Type:   Surface Goal
+                Goal type:   Mass Flow Rate
+                Faces:   Face<1>@LID13-1
+                Coordinate system:   Global coordinate system
+                Use in convergence :   On
+
+            Pintle (Oxidizer) Exit Mass Flow Rate
+                Type:   Surface Goal
+                Goal type:   Mass Flow Rate
+                Faces:   Face<7>@Pintle-1, Face<9>@Pintle-1, Face<8>@Pintle-1, Face<1>@Pintle-1, Face<3>@Pintle-1, Face<2>@Pintle-1, Face<4>@Pintle-1, Face<6>@Pintle-1, Face<10>@Pintle-1, Face<5>@Pintle-1
+                Coordinate system:   Global coordinate system
+                Use in convergence :   On
+
+    Goals
+                
+                Name                                          	Unit       	Value       	Progress   	Criteria         	Delta            	Use in convergence 
+                Pintle (Oxidizer) Exit Total Pressure         	lbf/in^2   	100.00000   	100        	2.20361844e-06   	1.31055396e-07   	On                 
+                 Annulus (Fuel) Exit Average Total Pressure   	lbf/in^2   	100.00000   	100        	1e-06            	7.5887894e-10    	On                 
+                Annulus (Fuel) Exit Mass Flow Rate            	lb/s       	0           	1000       	2.20462248e-08   	0                	On                 
+                Pintle (Oxidizer) Exit Mass Flow Rate         	lb/s       	0           	1000       	2.20462248e-08   	0                	On                 
+
+    General Info
+                Run at:   MCAE24
+                Number of cores:   8
+                Iterations:   48
+                CPU time:   0 s
+
+        Log
+                Mesh generation started	0:   17:19:53 , Jan 25
+                Mesh generation normally finished	0:   17:19:54 , Jan 25
+                Preparing data for calculation	0:   17:54:35 , Jan 25
+                Calculation started	0:   17:54:37 , Jan 25
+                Calculation has converged since the following criteria are satisfied:	48:   17:54:46 , Jan 25
+                    Goals are converged	48:   
+                Calculation finished	48:   17:54:47 , Jan 25
+                Warnings:   A vortex crosses the pressure opening	Boundary Condition : Inlet Static Pressure ; Inlet flow/outlet flow=0.999847, 		Boundary Condition : Inlet Static Pressure ; Inlet flow/outlet flow=1.06709, 		Boundary Condition : Inlet Static Pressure ; Inlet flow/outlet flow=0.797884, 		Boundary Condition : Inlet Static Pressure ; Inlet flow/outlet flow=1.0238, 		, Invalid goals	Goal name: Annulus (Fuel) Exit Mass Flow Rate, 		Goal name: Pintle (Oxidizer) Exit Mass Flow Rate, 		, 

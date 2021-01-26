@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectResults><FlowmasterData><Arm><Name>Inlet Static Pressure</Name><ID>240</ID><Area>0.00038883515847992176</Area><M>-3.0215492933551382e-09</M><P>689475.80000117712</P><T>293.20000003479328</T><Rho>997.56173931896058</Rho><Visc>0.0010005079992241115</Visc><Cp>4183.307097854753</Cp><H>-0.0037388092936005389</H><Ho>1237381.1985639862</Ho><K>0.59849992010256758</K></Arm><ContactArea>0.011508004871364302</ContactArea><AveWallTemp>293.20000013296874</AveWallTemp></FlowmasterData></ProjectResults>
