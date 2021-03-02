@@ -1,0 +1,1 @@
+This folder contains files that are to be used for optimizing the injector only. Dimensions may not match the current version. Dimensions that are directly relevant to the flow through the injector are the only parameters that should be updated to the current version.

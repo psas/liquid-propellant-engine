@@ -18,6 +18,7 @@ In an attempt to wrangle some design requirements into a single location, this d
 * Fuel: 0.87 lb/sec (0.394 kg/sec)
 * Oxidizer: 1.13 lb/sec (0.513 kg/sec)
 * Total: 2.0 lb/sec (0.907 kg/sec)
+* Momenta of fuels should be equal
 
 *(Note: these values are from the PSAS LFE python notebook scripts. May vary slightly if using RPA to calculate flowrates.)*
 	

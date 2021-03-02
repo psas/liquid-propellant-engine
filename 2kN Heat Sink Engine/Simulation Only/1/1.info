@@ -1,0 +1,101 @@
+
+    System Info
+                Status:   Solver is finished.
+                Product:   Flow Simulation 2020 4.0. Build: 4995
+                Computer name:   MCAE03
+                User name:   cstarker
+                Processors:   Intel(R) Xeon(R) CPU E3-1240 v6 @ 3.70GHz
+                Memory:   16315 MB / 8078 MB
+                Operating system:   Windows 10 (or higher) (Version 10.0.18363)
+                CAD version:   SOLIDWORKS 2020 SP4.0
+                CPU speed:   3696 MHz
+
+    General Info
+                Model:   FullStack.SLDASM
+                Project name:   Single Fluid (Water Substitute)
+                Project path:   N:\Downloads\GitHub\liquid-propellant-engine\2kN Heat Sink Engine\Simulation Only\1
+                Units system:   IPS (in-lb-s)
+                Analysis type:   Internal
+                Exclude cavities without flow conditions :   On
+                Coordinate system:   Global coordinate system
+                Reference axis:   X
+
+    Physical Features
+                Heat conduction in solids:   Off
+                Time dependent:   Off
+                Gravitational effects:   Off
+                Flow type:   Laminar and turbulent
+                Cavitation:   Off
+                High Mach number flow:   Off
+                Free surface:   Off
+                Default roughness:   0 microinch
+                Default wall conditions:   Adiabatic wall
+
+    Computational Domain
+
+        Size
+                X min:   0 in
+                X max:   6.64 in
+                Y min:   5.45 in
+                Y max:   9.10 in
+                Z min:   2.40 in
+                Z max:   9.12 in
+                X size:   6.64 in
+                Y size:   3.65 in
+                Z size:   6.72 in
+
+    Calculation Mesh
+
+        Basic Mesh Dimensions
+                Number of cells in X:   24
+                Number of cells in Y:   14
+                Number of cells in Z:   24
+
+        Number Of Cells
+                Cells:   14254
+                Fluid cells:   14254
+                Irregular cells:   0
+                Trimmed cells:   0
+                Maximum refinement level:   4
+
+    Goals
+
+        Surface Goals
+
+            Pintle (Oxidizer) Outlet Total Pressure
+                Type:   Surface Goal
+                Goal type:   Total Pressure
+                Calculate:   Average value
+                Faces:   Face<7>@Pintle-1, Face<9>@Pintle-1, Face<8>@Pintle-1, Face<1>@Pintle-1, Face<3>@Pintle-1, Face<2>@Pintle-1, Face<4>@Pintle-1, Face<6>@Pintle-1, Face<10>@Pintle-1, Face<5>@Pintle-1
+                Coordinate system:   Global coordinate system
+                Use in convergence :   On
+
+             Annulus (Fuel) Outlet Total Pressure
+                Type:   Surface Goal
+                Goal type:   Total Pressure
+                Calculate:   Average value
+                Faces:   Face<1>@LID13-1
+                Coordinate system:   Global coordinate system
+                Use in convergence :   On
+
+    Goals
+                
+                Name                                      	Unit       	Value      	Progress   	Criteria      	Delta          	Use in convergence 
+                Pintle (Oxidizer) Outlet Total Pressure   	lbf/in^2   	46.34582   	100        	0.359675475   	0.35370849     	On                 
+                 Annulus (Fuel) Outlet Total Pressure     	lbf/in^2   	93.89643   	100        	0.196777852   	0.0511221071   	On                 
+
+    General Info
+                Run at:   MCAE03
+                Number of cores:   8
+                Iterations:   86
+                CPU time:   0 s
+
+        Log
+                Mesh generation started	0:   17:51:44 , Mar 01
+                Mesh generation normally finished	0:   17:51:48 , Mar 01
+                Preparing data for calculation	0:   17:51:48 , Mar 01
+                Calculation started	0:   17:51:51 , Mar 01
+                Calculation has converged since the following criteria are satisfied:	86:   17:52:13 , Mar 01
+                    Goals are converged	86:   
+                Calculation finished	86:   17:52:15 , Mar 01
+                Warnings:   Negative pressure	Minimum pressure=-105.791 lbf/in^2; dV/V=4.13364, 		, 
