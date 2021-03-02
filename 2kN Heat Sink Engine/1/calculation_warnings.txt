@@ -1,15 +1,9 @@
-2021-Jan-25 17:54:46
-Computer name:	MCAE24
+2021-Mar-01 15:42:06
+Computer name:	MCAE03
 Number of cores used in calculation:	8
 Configuration name:	Default
 Project name:	Project(1)
 
 Warnings on last iteration: 
-1. A vortex crosses the pressure opening :
-	Boundary Condition : Inlet Static Pressure ; Inlet flow/outlet flow=0.999847
-	Boundary Condition : Inlet Static Pressure ; Inlet flow/outlet flow=1.06709
-	Boundary Condition : Inlet Static Pressure ; Inlet flow/outlet flow=0.797884
-	Boundary Condition : Inlet Static Pressure ; Inlet flow/outlet flow=1.0238
-2. Invalid goals :
-	Goal name: Annulus (Fuel) Exit Mass Flow Rate
-	Goal name: Pintle (Oxidizer) Exit Mass Flow Rate
+1. Negative pressure :
+	Minimum pressure=-109.324 lbf/in^2; dV/V=3.97616

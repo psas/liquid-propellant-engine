@@ -1,29 +1,29 @@
 ﻿absolute path:N:\Downloads\GitHub\liquid-propellant-engine\2kN Heat Sink Engine\1
 init:1
-run_capture:0
+run_capture:1
 run_solver:1
 new_calc:1
 close_monitor:0
 run_convert:0
 isOK:1
-ForceNewCalc:0
-run_capture_prestate:0
-StartFldName:N:\Downloads\GitHub\liquid-propellant-engine\2kN Heat Sink Engine\1\1.fld
+ForceNewCalc:1
+run_capture_prestate:1
+StartFldName:
 NewCalcStartCptName:
 TransTimeMoments:
 TransFldNames:
 CurSelTranFld:0
 Trans:0
 UsePrevRes:0
-ForcetoRunCPT:0
+ForcetoRunCPT:1
 ComputerName:
-port:50524
+port:61940
 ProcessResults:1
 LoadLastResult:1
 ProcessorsToUse:0
 LoadBaseFLDFile:0
 BaseFLDFile:
-id:{EDEB1EC9-B562-4822-92F9-2BE65FCA7156}
+id:{EF9EA6F8-C23F-4CE4-B276-735768D2A4C4}
 calculation_state:15
 ForceContinue:0
-SolverProcessId:11964
+SolverProcessId:12280
