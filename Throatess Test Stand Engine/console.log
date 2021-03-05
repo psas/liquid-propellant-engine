@@ -28,3 +28,8 @@ Message: DisplayMarketplaceWelcomePage() sw3DPrintConnector undefined
 Source: file:///C:/Users/Emilio/AppData/Local/Temp/swcachedir/SWMarketplaceAddin/SWMarketplaceWelcome.html?homeURL=https%3a%2f%2feu1-ifwe.3dexperience.3ds.com%2f%3faddinmode%3dsolidworks%26utm_medium%3dNATIVE_APP
 Line: 208
 -----------------------
+Level: Info
+Message: DisplayMarketplaceWelcomePage() sw3DPrintConnector undefined
+Source: file:///C:/Users/Emilio/AppData/Local/Temp/swcachedir/SWMarketplaceAddin/SWMarketplaceWelcome.html?homeURL=https%3a%2f%2feu1-ifwe.3dexperience.3ds.com%2f%3faddinmode%3dsolidworks%26utm_medium%3dNATIVE_APP
+Line: 208
+-----------------------
