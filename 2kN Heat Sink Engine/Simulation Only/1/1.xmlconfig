@@ -24,8 +24,8 @@
 <JouleHeating value="0"/>
 <LicenseType value="0"/>
 <ManualSolverRefinement value="0"/>
-<MinimalGapSize value="0.001511823629870575"/>
-<MinimalWallThickness value="0.001511823629870575"/>
+<MinimalGapSize value="0.0012701999773915655"/>
+<MinimalWallThickness value="0.0012701999773915655"/>
 <NewCalcStartCptName value=""/>
 <ParticleStudyBinary value="BAAAAAAAAAAAAAAAAAAAAAQBAAAAAAAAAAwAAAAAAAAACQAAAAAAAAAvSXNFbmFibGUADgAAAAAAAAAvaXNGbG93SW5QbGFuZQAQAAAAAAAAAC9pc0VuYWJsZUdyYXZpdHkADgAAAAAAAAAvaXNTYXZlVG9BU0NJSQAOAAAAAAAAAC9iQ2FsY0ZlZWRiYWNrARQAAAAAAAAAL2lzQ2FsY0FjY3JldGlvblJhdGUACwAAAAAAAAAvaXNQYXJ0aWNsZQESAAAAAAAAAC9pc0NhbGNFcm9zaW9uUmF0ZQAOAAAAAAAAAC9iU2F2ZVJlczJGaWxlAA4AAAAAAAAAL2lzRmFzdFByb2Nlc3MAFQAAAAAAAAAvaXNSZWxhdGl2ZVRvQWJzRnJhbWUBEQAAAAAAAAAvaXNVc2VDQURHZW9tZXRyeQEIAAAAAAAAAAIAAAAAAAAAFAAAAAAAAAAvQ29uc3RyYWludHMvTWF4VGltZQAAAAAAIKxAFgAAAAAAAAAvQ29uc3RyYWludHMvTWF4TGVuZ3RoAAAAAAAAAEAAAAAAAAAAAAYAAAAAAAAADgAAAAAAAAAvR3Jhdml0eVZlY3RvchgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB+F61G4niPACAAAAAAAAAAvUGxvdEJveDAAAAAAAAAAAAAAAAAAAAAIGluCY5rFP14Uj7iEuME/M+wEtDuVzT96T6BQkDWvP1Hib9D/ps0/CAAAAAAAAAAvUFNfbmFtZRQAAAAAAAAAEAAAAFBhcnRpY2xlIFN0dWR5IDETAAAAAAAAAC9QYXJ0aWNsZVBhcmFtVVVJRHNgAgAAAAAAAA8AAAAAAAAAJAAAADgwQkI5MUQ4LTk0NEItNDg0ZS04NjQzLTdEODgzNkI3NTcxNyQAAAA1QzNBNEQ4OS1BQkIxLTQ2MDUtODIzMC0wNUY2NkJFNUU0QkEkAAAAN0M4Q0QyRkItNTRDNi00ZDgyLTgxMDAtMzAzQUUxMDA5MzQ1JAAAAEZDRjY5MkNGLTg4NUQtNDMzZi04RjQwLTBFMjYyOUYwQjNFQyQAAAA1NkVEQTBDMi0wOThGLTRkMTUtQTAyOC1FRkUwMkUxMkM4MDEkAAAAODlCNjY0RjItNzk0OC00YWM2LUFFMzQtMEIxOTc4MUM2QUJDJAAAADYyOTdDNTAwLUZFMjQtNDZiNi04RkZCLUMxODZFMEM5NjhDRSQAAABCQ0YwOEJFRi1DNzYyLTRjOGUtOTRCMi1GNEY2NzA1RkY5RjYkAAAAM0YzMzI5RkQtNTgxQi00N2U5LUEzQzktNDNEMzNEOTYyQkNDJAAAAEUyM0Y3NzIxLTU0N0ItNGE2OS1CMEQ5LUM0MjlFQ0QwNUIxOSQAAAAxMkEwNzhEMC02OTEyLTRjMDEtODFFNi02Njc5QjgxRTZENDEkAAAARDg5QkRBNzYtMEQxOC00YzQ3LUFCMkUtRTE2MjI3MUFFNkU5JAAAADA5QzlGQUU2LTRGMzUtNGMyMS04NEJELTQ5NUNDOEFEMTI4NyQAAAA3MjFFMTIyNy0xNzlFLTQxMzUtQjREMC0xMDM4MTA5OEFDMDgkAAAAOTc5NDU5NTQtNDQ4Ni00YWVmLUFFMjUtNDRFNEM5MzBGQzEzDgAAAAAAAAAvQVNDSUlGaWxlTmFtZQQAAAAAAAAAAAAAAAsAAAAAAAAAL0luamVjdGlvbnMIAAAAAAAAAAAAAAAAAAAABAAAAAAAAAACAAAAAAAAABUAAAAAAAAAL0NvbnN0cmFpbnRzL01heFRzdGVwUMMAAA0AAAAAAAAAL0ZQX0RpcmVjdGlvbgEAAAA="/>
 <PerformanceMonitoring value="0"/>
@@ -1661,7 +1661,7 @@
 <RefinementLevel value="0"/>
 <SolidCellsRefinementLevel value="0"/>
 <ToleranceCriteriaRefinementLevel value="4"/>
-<ToleranceCriteriaValue value="0.00037795590746764375"/>
+<ToleranceCriteriaValue value="0.00031754999434789138"/>
 <DistanceRefinementLevels size="2"> 0 0 </DistanceRefinementLevels>
 <ControlPoints index="0">
 <Manual size="2"> 0 0 </Manual>
@@ -1785,7 +1785,7 @@
 <GUID value="112d778d-14a8-40b9-b0ab-acbb6c8e3638"/>
 <Goal_Type value="3"/>
 <Goal_Use_In_Convergence value="1"/>
-<Name value="Pintle (Oxidizer) Outlet Total Pressure"/>
+<Name value="Pintle Outlet Total Pressure"/>
 <Parameter value="17"/>
 <UnitId value="14"/>
 </GoalInfo>
@@ -1798,7 +1798,7 @@
 <GUID value="1fa9ab56-bf0c-4a86-a452-a2607a2075b3"/>
 <Goal_Type value="3"/>
 <Goal_Use_In_Convergence value="1"/>
-<Name value=" Annulus (Fuel) Outlet Total Pressure"/>
+<Name value="Annulus Outlet Total Pressure"/>
 <Parameter value="17"/>
 <UnitId value="14"/>
 </GoalInfo>
@@ -2573,8 +2573,8 @@
 <RotateAxis value="0"/>
 <WallVelocityType value="0"/>
 <BodiesIDs size="0"> </BodiesIDs>
-<Excluded_Faces_Keys size="13"> 205 223 235 226 217 238 229 220 208 211 214 232 253 </Excluded_Faces_Keys>
-<Faces_Keys size="4"> 240 243 249 246 </Faces_Keys>
+<Excluded_Faces_Keys size="13"> 193 202 205 220 226 223 199 211 208 217 196 214 241 </Excluded_Faces_Keys>
+<Faces_Keys size="4"> 231 237 234 228 </Faces_Keys>
 <FeatureFrameOfRefXform size="16"> 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 </FeatureFrameOfRefXform>
 <ExcelParameterCollection index="0">
 <ExcelParameter index="0">
@@ -3609,7 +3609,7 @@
 <ExcelParameterLinkedSubId value=""/>
 <ExcelParameterPeriodic value="0"/>
 <ExcelParameterType value="3"/>
-<ExcelParameterValue value="689475.79999999993"/>
+<ExcelParameterValue value="482633.06"/>
 <UUID value=""/>
 <UseDampedGoalsValues value="0"/>
 <ExcelParameterDefinitionValues size="0"> </ExcelParameterDefinitionValues>
@@ -3673,13 +3673,13 @@
 <FrameOfRefUUID value=""/>
 <GUID value="e10ed004-7ea2-4d85-8a83-973ebc87a051"/>
 <IsMovingWall value="0"/>
-<Name value="Pintle (Oxidizer) Outlet Mass Flow"/>
+<Name value="Pintle Outlet Mass Flow"/>
 <ParentFeatureUUID value=""/>
 <RotateAxis value="0"/>
 <WallVelocityType value="0"/>
 <BodiesIDs size="0"> </BodiesIDs>
-<Excluded_Faces_Keys size="5"> 240 243 249 246 253 </Excluded_Faces_Keys>
-<Faces_Keys size="12"> 205 223 235 226 217 238 229 220 208 211 214 232 </Faces_Keys>
+<Excluded_Faces_Keys size="5"> 231 237 234 228 241 </Excluded_Faces_Keys>
+<Faces_Keys size="12"> 193 202 205 220 226 223 199 211 208 217 196 214 </Faces_Keys>
 <FeatureFrameOfRefXform size="16"> 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 </FeatureFrameOfRefXform>
 <ExcelParameterCollection index="0">
 <ExcelParameter index="0">
@@ -4775,17 +4775,17 @@
 <BC index="2">
 <FeatureType value="0"/>
 <FlowConditionsTypes value="100"/>
-<FrameOfRefUUID value="87d80fd8-9ec2-4ae7-9fe8-8c3518c21661"/>
+<FrameOfRefUUID value="2554c9a9-9008-4d5a-b22b-e7b04eb402bb"/>
 <GUID value="fc8b8977-6cbe-4526-9dd9-c72a3706502c"/>
 <IsMovingWall value="0"/>
-<Name value="Annulus (Fuel) Outlet Mass Flow"/>
+<Name value="Annulus Outlet Mass Flow"/>
 <ParentFeatureUUID value=""/>
 <RotateAxis value="0"/>
 <WallVelocityType value="0"/>
 <BodiesIDs size="0"> </BodiesIDs>
-<Excluded_Faces_Keys size="16"> 240 243 249 246 205 223 235 226 217 238 229 220 208 211 214 232 </Excluded_Faces_Keys>
-<Faces_Keys size="1"> 253 </Faces_Keys>
-<FeatureFrameOfRefXform size="16"> -1.0519044877755377e-14 1 0 1 1.0519044877755377e-14 1.4093656209243064e-14 1.4093656209243064e-14 1.4825180215668352e-28 -1 -0.17362064437241617 -0.083089555577653046 0.1472797557970201 1 0 0 0 </FeatureFrameOfRefXform>
+<Excluded_Faces_Keys size="16"> 231 237 234 228 193 202 205 220 226 223 199 211 208 217 196 214 </Excluded_Faces_Keys>
+<Faces_Keys size="1"> 241 </Faces_Keys>
+<FeatureFrameOfRefXform size="16"> -1.0519044877755377e-14 1 0 1 1.0519044877755377e-14 1.4093656209243064e-14 1.4093656209243064e-14 1.4825180215668352e-28 -1 -0.17362064437241617 -0.083089541305839967 0.14727975206666316 1 0 0 0 </FeatureFrameOfRefXform>
 <ExcelParameterCollection index="0">
 <ExcelParameter index="0">
 <ContainsBCTransferred value="0"/>
@@ -5888,11 +5888,11 @@
 <Goal_Type value="17"/>
 <Goal_Usage_Type value="0"/>
 <Goal_Use_In_Convergence value="1"/>
-<Name value="Pintle (Oxidizer) Outlet Total Pressure"/>
+<Name value="Pintle Outlet Total Pressure"/>
 <ParentFeatureUUID value=""/>
 <BodiesIDs size="0"> </BodiesIDs>
 <Excluded_Faces_Keys size="0"> </Excluded_Faces_Keys>
-<Faces_Keys size="10"> 205 226 235 217 229 238 220 211 214 232 </Faces_Keys>
+<Faces_Keys size="10"> 193 220 205 226 199 223 211 217 196 214 </Faces_Keys>
 <FeatureFrameOfRefXform size="16"> 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 </FeatureFrameOfRefXform>
 </Surface_Goal>
 <Surface_Goal index="1">
@@ -5904,18 +5904,18 @@
 <Goal_Type value="17"/>
 <Goal_Usage_Type value="0"/>
 <Goal_Use_In_Convergence value="1"/>
-<Name value=" Annulus (Fuel) Outlet Total Pressure"/>
+<Name value="Annulus Outlet Total Pressure"/>
 <ParentFeatureUUID value=""/>
 <BodiesIDs size="0"> </BodiesIDs>
 <Excluded_Faces_Keys size="0"> </Excluded_Faces_Keys>
-<Faces_Keys size="1"> 253 </Faces_Keys>
+<Faces_Keys size="1"> 241 </Faces_Keys>
 <FeatureFrameOfRefXform size="16"> 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 </FeatureFrameOfRefXform>
 </Surface_Goal>
 </Features_Surface_Goal>
 <Geometry index="0">
 <GeomType value="0"/>
 <GeomUUID value="00000000-0000-0000-0000-000000000000"/>
-<BodiesIDs size="1"> 0a413d2a-e587-463a-9aee-1c9066e5b865 </BodiesIDs>
+<BodiesIDs size="1"> 993f030c-6fb8-42bc-bd6b-5c74b2199f9d </BodiesIDs>
 </Geometry>
 <ReferenceParameters index="0">
 <ConstTemperature value="293.19999999999999"/>
