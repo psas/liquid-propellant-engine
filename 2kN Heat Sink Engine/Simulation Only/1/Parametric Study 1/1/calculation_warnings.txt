@@ -1,0 +1,12 @@
+2021-Apr-02 18:33:00
+Computer name:	MCAE01
+Number of cores used in calculation:	8
+Configuration name:	Default
+Project name:	Single Fluid (Water Substitute)
+
+Warnings on last iteration: 
+1. Negative pressure :
+	Minimum pressure=-3.19388e+06 lbf/in^2; dV/V=25.5539
+2. A vortex crosses the pressure opening :
+	Boundary Condition : All Inlet Static Pressure ; Inlet flow/outlet flow=0.0344884
+	Boundary Condition : All Inlet Static Pressure ; Inlet flow/outlet flow=2.8602
