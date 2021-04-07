@@ -11,6 +11,7 @@ In an attempt to wrangle some design requirements into a single location, this d
 * Exit Pressure: 14.7 psia (0.101 MPa)
 * Oxidizer: Liquid Oxygen
 * Fuel: Isopropyl alcohol, 70% by volume *(Note: this is 64.8% IPA, 35.2% water by mass, according to my calculations)*
+*Annulus gap must not be smaller than 1 mm
 
 ## Injector Parameters ##
 
@@ -31,7 +32,7 @@ Pressure target for the injector is 20% of the chamber pressure. This is not a p
 
 ### Fluid Velocities ###
 
-* The fluid velocity target range is ~30-100 ft/s (~10-30 m/s). 
+* The fluid velocity target range is ~30-100 ft/s (~10-30 m/s, 360-1200 in/s). 
 
 This is a range from recollection. This value can be found by calculated from flowrates & total orifice areas. This value is necessary to calculate the momentum ratio, which helps define the combination fan angle of the fluids. 
 
