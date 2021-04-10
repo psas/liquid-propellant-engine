@@ -1,0 +1,108 @@
+
+    System Info
+                Status:   Solver is finished.
+                Product:   Flow Simulation 2020 4.0. Build: 4995
+                Computer name:   MCAE02
+                User name:   cstarker
+                Processors:   Intel(R) Xeon(R) CPU E3-1240 v6 @ 3.70GHz
+                Memory:   16315 MB / 10762 MB
+                Operating system:   Windows 10 (or higher) (Version 10.0.18363)
+                CAD version:   SOLIDWORKS 2020 SP4.0
+                CPU speed:   3696 MHz
+
+    General Info
+                Model:   FullStack.SLDASM
+                Project name:   Experiment 91
+                Project path:   N:\Downloads\GitHub\liquid-propellant-engine\2kN Heat Sink Engine\Simulation Only\1\Parametric Study 2\25
+                Units system:   IPS (in-lb-s)
+                Analysis type:   Internal
+                Exclude cavities without flow conditions :   On
+                Coordinate system:   Global coordinate system
+                Reference axis:   X
+
+    Physical Features
+                Heat conduction in solids:   Off
+                Time dependent:   Off
+                Gravitational effects:   Off
+                Flow type:   Laminar and turbulent
+                Cavitation:   Off
+                High Mach number flow:   Off
+                Free surface:   Off
+                Default roughness:   0 microinch
+                Default wall conditions:   Adiabatic wall
+
+    Computational Domain
+
+        Size
+                X min:   0.97 in
+                X max:   5.82 in
+                Y min:   5.79 in
+                Y max:   8.40 in
+                Z min:   4.06 in
+                Z max:   8.52 in
+                X size:   4.85 in
+                Y size:   2.60 in
+                Z size:   4.46 in
+
+    Goals
+
+        Surface Goals
+
+            Oxidizer Outlet Total Pressure
+                Type:   Surface Goal
+                Goal type:   Total Pressure
+                Calculate:   Average value
+                Faces:   Face<7>@Pintle-1, Face<1>@Pintle-1, Face<8>@Pintle-1, Face<9>@Pintle-1, Face<2>@Pintle-1, Face<3>@Pintle-1, Face<4>@Pintle-1, Face<6>@Pintle-1, Face<10>@Pintle-1, Face<5>@Pintle-1
+                Coordinate system:   Global coordinate system
+                Use in convergence :   On
+
+            Fuel Outlet Total Pressure
+                Type:   Surface Goal
+                Goal type:   Total Pressure
+                Calculate:   Average value
+                Faces:   Face<1>@LID13-1
+                Coordinate system:   Global coordinate system
+                Use in convergence :   On
+
+            Oxidizer Outlet Average Velocity
+                Type:   Surface Goal
+                Goal type:   Velocity
+                Calculate:   Average value
+                Faces:   Face<1>@Pintle-1
+                Coordinate system:   Global coordinate system
+                Use in convergence :   On
+
+            Fuel Outlet Average Velocity
+                Type:   Surface Goal
+                Goal type:   Velocity
+                Calculate:   Average value
+                Faces:   Face<2>@LID13-1
+                Coordinate system:   Global coordinate system
+                Use in convergence :   On
+
+        Equation Goals
+
+            Oxidizer Outlet Momentum
+                Type:   Equation Goal
+                Formula:   {Oxidizer Outlet Mass Flow:Mass flow rate:5.126e-01}*Oxidizer Outlet Average Velocity
+                Dimensionality:   No units
+                Use in convergence :   On
+
+            Fuel Outlet Momentum
+                Type:   Equation Goal
+                Formula:   {Fuel Outlet Mass Flow:Mass flow rate:3.946e-01}*Fuel Outlet Average Velocity
+                Dimensionality:   No units
+                Use in convergence :   On
+
+    General Info
+                Iterations:   0
+                CPU time:   0 s
+
+        Log
+                Mesh generation started	0:   17:11:42 , Apr 09
+                Mesh generation normally finished	0:   17:11:45 , Apr 09
+                Preparing data for calculation	0:   17:11:45 , Apr 09
+                Calculation started	0:   17:11:47 , Apr 09
+                Calculation has converged since the following criteria are satisfied:	96:   17:12:15 , Apr 09
+                    Goals are converged	96:   
+                Calculation finished	96:   17:12:17 , Apr 09
