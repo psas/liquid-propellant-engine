@@ -1,0 +1,256 @@
+Polynomial Models:
+
+4
+Oxidizer Outlet Total Pressure
+Fuel Outlet Total Pressure
+Oxidizer Outlet Momentum
+Oxidizer Outlet Average Velocity
+
+Response Oxidizer Outlet Total Pressure
+
+Constant term
+           198.689439288209314
+
+Linear terms
+                   Design par.                         Value
+Tap Drill Dia.@Sketch5@TopPlate.Part()            35.407128088646104
+Fuel Chamber Radius@Sketch2@TopPlate.Part()           117.975284361946365
+Fuel Outlet Radius@Sketch2@TopPlate.Part()         -1022.099718566789306
+Oxidizer Pintle Inner Radius@Sketch1@Pintle.Part()           386.680224584635653
+Oxidizer Pintle Outer Radius@Sketch1@Pintle.Part()            44.055082122961352
+Oxidizer Outlet Diameter@Sketch20@Pintle.Part()           344.576311746835358
+
+Quadratic terms
+                              Tap Drill Dia.@Sketch5@TopPlate.Part()Fuel Chamber Radius@Sketch2@TopPlate.Part()Fuel Outlet Radius@Sketch2@TopPlate.Part()Oxidizer Pintle Inner Radius@Sketch1@Pintle.Part()Oxidizer Pintle Outer Radius@Sketch1@Pintle.Part()Oxidizer Outlet Diameter@Sketch20@Pintle.Part()
+Tap Drill Dia.@Sketch5@TopPlate.Part()             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000         -1264.292977415833320
+Fuel Chamber Radius@Sketch2@TopPlate.Part()             0.000000000000000           -49.672495194378939             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000
+Fuel Outlet Radius@Sketch2@TopPlate.Part()             0.000000000000000             0.000000000000000             0.000000000000000         -1183.536858055296761             0.000000000000000             0.000000000000000
+Oxidizer Pintle Inner Radius@Sketch1@Pintle.Part()             0.000000000000000             0.000000000000000         -1183.536858055296761             0.000000000000000             0.000000000000000             0.000000000000000
+Oxidizer Pintle Outer Radius@Sketch1@Pintle.Part()             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000
+Oxidizer Outlet Diameter@Sketch20@Pintle.Part()         -1264.292977415833320             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000
+
+
+Response Fuel Outlet Total Pressure
+
+Constant term
+        195704.392853683006251
+
+Linear terms
+                   Design par.                         Value
+Tap Drill Dia.@Sketch5@TopPlate.Part()         -2179.275998507787335
+Fuel Chamber Radius@Sketch2@TopPlate.Part()           755.740283365021696
+Fuel Outlet Radius@Sketch2@TopPlate.Part()      -1705698.027285454794765
+Oxidizer Pintle Inner Radius@Sketch1@Pintle.Part()        -65988.788059789338149
+Oxidizer Pintle Outer Radius@Sketch1@Pintle.Part()         23886.191849432438175
+Oxidizer Outlet Diameter@Sketch20@Pintle.Part()           909.961575424946886
+
+Quadratic terms
+                              Tap Drill Dia.@Sketch5@TopPlate.Part()Fuel Chamber Radius@Sketch2@TopPlate.Part()Fuel Outlet Radius@Sketch2@TopPlate.Part()Oxidizer Pintle Inner Radius@Sketch1@Pintle.Part()Oxidizer Pintle Outer Radius@Sketch1@Pintle.Part()Oxidizer Outlet Diameter@Sketch20@Pintle.Part()
+Tap Drill Dia.@Sketch5@TopPlate.Part()             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000
+Fuel Chamber Radius@Sketch2@TopPlate.Part()             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000
+Fuel Outlet Radius@Sketch2@TopPlate.Part()             0.000000000000000             0.000000000000000       3668892.013627598062158        271467.909071779460646             0.000000000000000             0.000000000000000
+Oxidizer Pintle Inner Radius@Sketch1@Pintle.Part()             0.000000000000000             0.000000000000000        271467.909071779460646             0.000000000000000             0.000000000000000             0.000000000000000
+Oxidizer Pintle Outer Radius@Sketch1@Pintle.Part()             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000        -44337.920242516847793             0.000000000000000
+Oxidizer Outlet Diameter@Sketch20@Pintle.Part()             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000
+
+
+Response Oxidizer Outlet Momentum
+
+Constant term
+          3667.584332353073023
+
+Linear terms
+                   Design par.                         Value
+Tap Drill Dia.@Sketch5@TopPlate.Part()          -524.433275334798395
+Fuel Chamber Radius@Sketch2@TopPlate.Part()          -343.309188079543674
+Fuel Outlet Radius@Sketch2@TopPlate.Part()         -9377.410174069480490
+Oxidizer Pintle Inner Radius@Sketch1@Pintle.Part()         -2431.968920034330949
+Oxidizer Pintle Outer Radius@Sketch1@Pintle.Part()           407.061561756873573
+Oxidizer Outlet Diameter@Sketch20@Pintle.Part()             0.000000000000000
+
+Quadratic terms
+                              Tap Drill Dia.@Sketch5@TopPlate.Part()Fuel Chamber Radius@Sketch2@TopPlate.Part()Fuel Outlet Radius@Sketch2@TopPlate.Part()Oxidizer Pintle Inner Radius@Sketch1@Pintle.Part()Oxidizer Pintle Outer Radius@Sketch1@Pintle.Part()Oxidizer Outlet Diameter@Sketch20@Pintle.Part()
+Tap Drill Dia.@Sketch5@TopPlate.Part()             0.000000000000000           470.504363556767544             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000
+Fuel Chamber Radius@Sketch2@TopPlate.Part()           470.504363556767544             0.000000000000000             0.000000000000000          4068.084557099460653             0.000000000000000             0.000000000000000
+Fuel Outlet Radius@Sketch2@TopPlate.Part()             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000
+Oxidizer Pintle Inner Radius@Sketch1@Pintle.Part()             0.000000000000000          4068.084557099460653             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000
+Oxidizer Pintle Outer Radius@Sketch1@Pintle.Part()             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000
+Oxidizer Outlet Diameter@Sketch20@Pintle.Part()             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000
+
+
+Response Oxidizer Outlet Average Velocity
+
+Constant term
+          3245.649851639884218
+
+Linear terms
+                   Design par.                         Value
+Tap Drill Dia.@Sketch5@TopPlate.Part()          -464.100243659112380
+Fuel Chamber Radius@Sketch2@TopPlate.Part()          -303.813440778356380
+Fuel Outlet Radius@Sketch2@TopPlate.Part()         -8298.593074397685996
+Oxidizer Pintle Inner Radius@Sketch1@Pintle.Part()         -2152.184884986134421
+Oxidizer Pintle Outer Radius@Sketch1@Pintle.Part()           360.231470581303256
+Oxidizer Outlet Diameter@Sketch20@Pintle.Part()             0.000000000000000
+
+Quadratic terms
+                              Tap Drill Dia.@Sketch5@TopPlate.Part()Fuel Chamber Radius@Sketch2@TopPlate.Part()Fuel Outlet Radius@Sketch2@TopPlate.Part()Oxidizer Pintle Inner Radius@Sketch1@Pintle.Part()Oxidizer Pintle Outer Radius@Sketch1@Pintle.Part()Oxidizer Outlet Diameter@Sketch20@Pintle.Part()
+Tap Drill Dia.@Sketch5@TopPlate.Part()             0.000000000000000           416.375542970592051             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000
+Fuel Chamber Radius@Sketch2@TopPlate.Part()           416.375542970592051             0.000000000000000             0.000000000000000          3600.074829291563219             0.000000000000000             0.000000000000000
+Fuel Outlet Radius@Sketch2@TopPlate.Part()             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000
+Oxidizer Pintle Inner Radius@Sketch1@Pintle.Part()             0.000000000000000          3600.074829291563219             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000
+Oxidizer Pintle Outer Radius@Sketch1@Pintle.Part()             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000
+Oxidizer Outlet Diameter@Sketch20@Pintle.Part()             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000             0.000000000000000
+
+
+Kriging Models:
+
+3
+Fuel Outlet Average Velocity
+Fuel Outlet Momentum
+Objective
+Response Fuel Outlet Average Velocity
+
+C_0
+          1364.970471637820538
+
+                    Experiment                  C(Experiment)
+                             0           -109.380099688333033
+                             1           -181.217714559710430
+                             2           -134.879663117107270
+                             3          -1477.186640012866974
+                             4           -407.832299799996292
+                             5           2359.850001964125113
+                             6             82.930821239413248
+                             7           -699.271324531057758
+                             8          -1451.467823544267958
+                             9           3556.710865044602997
+                            10          -1538.256122994801899
+
+                   Design par.                          Theta
+Tap Drill Dia.@Sketch5@TopPlate.Part()              7.173986669207778
+Fuel Chamber Radius@Sketch2@TopPlate.Part()              1.576767213922625
+Fuel Outlet Radius@Sketch2@TopPlate.Part()            115.967555410586428
+Oxidizer Pintle Inner Radius@Sketch1@Pintle.Part()            837.401332404344089
+Oxidizer Pintle Outer Radius@Sketch1@Pintle.Part()              3.875473309124054
+Oxidizer Outlet Diameter@Sketch20@Pintle.Part()           2284.999268019847023
+
+
+                   Design par.                          P
+Tap Drill Dia.@Sketch5@TopPlate.Part()              1.903727072788364
+Fuel Chamber Radius@Sketch2@TopPlate.Part()              1.941864397891479
+Fuel Outlet Radius@Sketch2@TopPlate.Part()              1.907911165634510
+Oxidizer Pintle Inner Radius@Sketch1@Pintle.Part()              1.900000000000000
+Oxidizer Pintle Outer Radius@Sketch1@Pintle.Part()              2.000000000000000
+Oxidizer Outlet Diameter@Sketch20@Pintle.Part()              1.900000000037103
+
+
+Response Fuel Outlet Momentum
+
+C_0
+          1187.524310324903354
+
+                    Experiment                  C(Experiment)
+                             0            -95.160686728848361
+                             1           -157.659411666946880
+                             2           -117.345306911884791
+                             3          -1285.152376811195154
+                             4           -354.814100825996434
+                             5           2053.069501708788266
+                             6             72.149814478290494
+                             7           -608.366052342022954
+                             8          -1262.777006483513105
+                             9           3094.338452588805467
+                            10          -1338.282827005479703
+
+                   Design par.                          Theta
+Tap Drill Dia.@Sketch5@TopPlate.Part()              7.173986669207784
+Fuel Chamber Radius@Sketch2@TopPlate.Part()              1.576767213922625
+Fuel Outlet Radius@Sketch2@TopPlate.Part()            115.967555410586201
+Oxidizer Pintle Inner Radius@Sketch1@Pintle.Part()            837.401332404344089
+Oxidizer Pintle Outer Radius@Sketch1@Pintle.Part()              3.875473309124047
+Oxidizer Outlet Diameter@Sketch20@Pintle.Part()           2284.999268019835654
+
+
+                   Design par.                          P
+Tap Drill Dia.@Sketch5@TopPlate.Part()              1.903727072788364
+Fuel Chamber Radius@Sketch2@TopPlate.Part()              1.941864397891479
+Fuel Outlet Radius@Sketch2@TopPlate.Part()              1.907911165634510
+Oxidizer Pintle Inner Radius@Sketch1@Pintle.Part()              1.900000000000000
+Oxidizer Pintle Outer Radius@Sketch1@Pintle.Part()              2.000000000000000
+Oxidizer Outlet Diameter@Sketch20@Pintle.Part()              1.900000000037103
+
+
+Response Objective
+
+C_0
+          2439.540279506360548
+
+                    Experiment                  C(Experiment)
+                             0             26.887483817981764
+                             1             66.633047922292178
+                             2             54.437276550013252
+                             3          -1256.036261732357161
+                             4            -70.597086951314580
+                             5           1846.060303112138172
+                             6            207.566612479122000
+                             7           -723.361945864806898
+                             8           -945.448131055879458
+                             9           2174.247751176928432
+                            10          -1380.389049454116503
+
+                   Design par.                          Theta
+Tap Drill Dia.@Sketch5@TopPlate.Part()              3.869775212489402
+Fuel Chamber Radius@Sketch2@TopPlate.Part()              1.693091394027376
+Fuel Outlet Radius@Sketch2@TopPlate.Part()            125.650176326571938
+Oxidizer Pintle Inner Radius@Sketch1@Pintle.Part()            837.401332404344089
+Oxidizer Pintle Outer Radius@Sketch1@Pintle.Part()              3.186135541580520
+Oxidizer Outlet Diameter@Sketch20@Pintle.Part()           1684.865509482636526
+
+
+                   Design par.                          P
+Tap Drill Dia.@Sketch5@TopPlate.Part()              1.912419818650357
+Fuel Chamber Radius@Sketch2@TopPlate.Part()              1.942368267201759
+Fuel Outlet Radius@Sketch2@TopPlate.Part()              1.907899308819323
+Oxidizer Pintle Inner Radius@Sketch1@Pintle.Part()              1.900000000000000
+Oxidizer Pintle Outer Radius@Sketch1@Pintle.Part()              2.000000000000000
+Oxidizer Outlet Diameter@Sketch20@Pintle.Part()              1.900173501791681
+
+
+
+Design values:
+Tap Drill Dia.@Sketch5@TopPlate.Part();Fuel Chamber Radius@Sketch2@TopPlate.Part();Fuel Outlet Radius@Sketch2@TopPlate.Part();Oxidizer Pintle Inner Radius@Sketch1@Pintle.Part();Oxidizer Pintle Outer Radius@Sketch1@Pintle.Part();Oxidizer Outlet Diameter@Sketch20@Pintle.Part();
+        0.3110756910        0.6526600087        0.2398580727        0.1202224477        0.3772509636        0.0331709095
+        0.4166113609        0.7788321595        0.2375618284        0.1988999691        0.2142635184        0.0908122573
+        0.1712224650        0.4003436369        0.2277921259        0.1485325581        0.3103651163        0.0916023256
+        0.3882172720        0.3084614908        0.2111244094        0.1233488372        0.1458813953        0.0323790698
+        0.2186900790        0.4987887935        0.2289033070        0.0647581395        0.3583395349        0.0758279070
+        0.4373801580        0.3248690169        0.2155691338        0.1649790698        0.3475697674        0.0445558140
+        0.3543118334        0.6825530858        0.2333480314        0.1089581395        0.2320395349        0.0246302326
+        0.1746130088        0.3872176160        0.2189026771        0.1665209302        0.1977720930        0.0437255814
+        0.1457933860        0.7974057684        0.2366815747        0.1310581395        0.1360906977        0.0766581395
+        0.2814151404        0.3904991212        0.2144579527        0.1557279070        0.0920325581        0.0686325581
+        0.3610929211        0.3018984803        0.2122355905        0.1798837209        0.2065837209        0.0910488372
+
+Bounds
+Tap Drill Dia.@Sketch5@TopPlate.Part();     0.1457934;     0.6560702
+Fuel Chamber Radius@Sketch2@TopPlate.Part();     0.2822094;     1.2699425
+Fuel Outlet Radius@Sketch2@TopPlate.Part();     0.0955616;     0.4300271
+Oxidizer Pintle Inner Radius@Sketch1@Pintle.Part();     0.0442000;     0.1989000
+Oxidizer Pintle Outer Radius@Sketch1@Pintle.Part();     0.0842000;     0.3789000
+Oxidizer Outlet Diameter@Sketch20@Pintle.Part();     0.0238000;     0.1071000
+Oxidizer Outlet Total Pressure;    46.2662;    56.6775
+Fuel Outlet Total Pressure;    -1000.7;    96.6036
+Oxidizer Outlet Momentum;    1305.06;    1405.95
+Oxidizer Outlet Average Velocity;    1154.92;    1244.2
+Fuel Outlet Average Velocity;    0;    4574.87
+Fuel Outlet Momentum;    0;    3980.14
+Objective;    1370.07;    4357.6
+
+Response Errors
+Oxidizer Outlet Total Pressure;    0.0472896
+Fuel Outlet Total Pressure;    0.065421
+Oxidizer Outlet Momentum;    0.112063
+Oxidizer Outlet Average Velocity;    0.112063
+Fuel Outlet Average Velocity;    0.299595
+Fuel Outlet Momentum;    0.299595
+Objective;    0.28352

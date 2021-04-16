@@ -11,7 +11,7 @@ In an attempt to wrangle some design requirements into a single location, this d
 * Exit Pressure: 14.7 psia (0.101 MPa)
 * Oxidizer: Liquid Oxygen
 * Fuel: Isopropyl alcohol, 70% by volume *(Note: this is 64.8% IPA, 35.2% water by mass, according to my calculations)*
-*Annulus gap must not be smaller than 1 mm
+*Annulus gap must not be smaller than 0.04 in (1 mm)
 
 ## Injector Parameters ##
 

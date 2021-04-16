@@ -1,0 +1,29 @@
+﻿absolute path:N:\Downloads\GitHub\liquid-propellant-engine\2kN Heat Sink Engine\Simulation Only\1\Parametric Study 2\36
+init:1
+run_capture:1
+run_solver:1
+new_calc:1
+close_monitor:1
+run_convert:0
+isOK:1
+ForceNewCalc:1
+run_capture_prestate:1
+StartFldName:N:\Downloads\GitHub\liquid-propellant-engine\2kN Heat Sink Engine\Simulation Only\1\Parametric Study 2\36\36.fld
+NewCalcStartCptName:
+TransTimeMoments:
+TransFldNames:
+CurSelTranFld:0
+Trans:0
+UsePrevRes:0
+ForcetoRunCPT:1
+ComputerName:
+port:64035
+ProcessResults:1
+LoadLastResult:0
+ProcessorsToUse:4
+LoadBaseFLDFile:0
+BaseFLDFile:
+id:{945A8CD8-6F11-44F0-8D88-EA5BB06A4073}
+calculation_state:15
+ForceContinue:0
+SolverProcessId:12560
