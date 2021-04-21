@@ -1,0 +1,9 @@
+2021-Apr-13 20:56:44
+Computer name:	MCAE33
+Number of cores used in calculation:	4
+Configuration name:	Default
+Project name:	Single Fluid (Water Substitute)
+
+Warnings on last iteration: 
+1. Negative pressure :
+	Minimum pressure=-93.9922 lbf/in^2; dV/V=3.14165
