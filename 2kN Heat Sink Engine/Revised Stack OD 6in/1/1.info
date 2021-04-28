@@ -1,0 +1,109 @@
+
+    System Info
+                Status:   Solver is finished.
+                Product:   Flow Simulation 2020 4.0. Build: 4995
+                Computer name:   MCAE33
+                User name:   cstarker
+                Processors:   Intel(R) Xeon(R) E-2224 CPU @ 3.40GHz
+                Memory:   16254 MB / 11504 MB
+                Operating system:   Windows 10 (or higher) (Version 10.0.18363)
+                CAD version:   SOLIDWORKS 2020 SP4.0
+                CPU speed:   3408 MHz
+
+    General Info
+                Model:   BasicPintle.SLDPRT
+                Project name:   Project(1)
+                Project path:   N:\Downloads\GitHub\liquid-propellant-engine\2kN Heat Sink Engine\Revised Stack OD 6in\1
+                Units system:   IPS (in-lb-s)
+                Analysis type:   Internal
+                Exclude cavities without flow conditions :   On
+                Coordinate system:   Global coordinate system
+                Reference axis:   X
+
+    Physical Features
+                Heat conduction in solids:   Off
+                Time dependent:   Off
+                Gravitational effects:   Off
+                Flow type:   Laminar and turbulent
+                High Mach number flow:   Off
+                Free surface:   Off
+                Default roughness:   0 microinch
+                Default wall conditions:   Adiabatic wall
+
+    Computational Domain
+
+        Size
+                X min:   -0.68 in
+                X max:   0.65 in
+                Y min:   -3.15 in
+                Y max:   0 in
+                Z min:   -0.68 in
+                Z max:   0.66 in
+                X size:   1.34 in
+                Y size:   3.15 in
+                Z size:   1.35 in
+
+    Calculation Mesh
+
+        Basic Mesh Dimensions
+                Number of cells in X:   20
+                Number of cells in Y:   48
+                Number of cells in Z:   20
+
+        Number Of Cells
+                Cells:   7107
+                Fluid cells:   7107
+                Irregular cells:   0
+                Trimmed cells:   0
+                Maximum refinement level:   2
+
+    Goals
+
+        Surface Goals
+
+            Inlet Average Total Pressure
+                Type:   Surface Goal
+                Goal type:   Total Pressure
+                Calculate:   Average value
+                Faces:   Face<9>
+                Coordinate system:   Global coordinate system
+                Use in convergence :   On
+
+            Outlet Average Velocity
+                Type:   Surface Goal
+                Goal type:   Velocity
+                Calculate:   Average value
+                Faces:   Face<3>, Face<8>, Face<6>, Face<4>, Face<2>, Face<1>, Face<7>, Face<5>
+                Coordinate system:   Global coordinate system
+                Use in convergence :   On
+
+        Equation Goals
+
+            Outlet Momentum
+                Type:   Equation Goal
+                Formula:   {Inlet Mass Flow:Mass flow rate:5.126e-01}*Outlet Average Velocity
+                Dimensionality:   Velocity
+                Use in convergence :   On
+
+    Goals
+                
+                Name                           	Unit       	Value      	Progress   	Criteria      	Delta         	Use in convergence 
+                Inlet Average Total Pressure   	lbf/in^2   	32.36114   	100        	0.361230678   	0.328553939   	On                 
+                Outlet Average Velocity        	in/s       	736.82     	100        	2.70304348    	2.53424647    	On                 
+                Outlet Momentum                	in/s       	832.61     	100        	3.05443914    	2.86369851    	On                 
+
+    General Info
+                Run at:   MCAE33
+                Number of cores:   4
+                Iterations:   166
+                CPU time:   0 s
+
+        Log
+                Mesh generation started	0:   01:29:49 , Apr 28
+                Mesh generation normally finished	0:   01:29:50 , Apr 28
+                Preparing data for calculation	0:   01:29:50 , Apr 28
+                Calculation started	0:   01:29:52 , Apr 28
+                Calculation has converged since the following criteria are satisfied:	166:   01:30:28 , Apr 28
+                    Goals are converged	166:   
+                Calculation finished	166:   01:30:29 , Apr 28
+                Warnings:   Negative pressure	Minimum pressure=-56.7244 lbf/in^2; dV/V=65.6774, 		, A vortex crosses the pressure opening	Boundary Condition : Outlet Total Pressure ; Inlet flow/outlet flow=0.194378, 		Boundary Condition : Outlet Total Pressure ; Inlet flow/outlet flow=0.0309865, 		Boundary Condition : Outlet Total Pressure ; Inlet flow/outlet flow=0.0145693, 		Boundary Condition : Outlet Total Pressure ; Inlet flow/outlet flow=0.236042, 		Boundary Condition : Outlet Total Pressure ; Inlet flow/outlet flow=0.230929, 		Boundary Condition : Outlet Total Pressure ; Inlet flow/outlet flow=0.236283, 		, 
