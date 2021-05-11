@@ -1,0 +1,2 @@
+Iteration	CPUTime	PhysTime	Travels	Value	AvValue	MinValue	MaxValue	Delta	Criteria	Progress	dGMaxMin	CriteriaType	CriteriaVarType	CriteriaPercentage
+1	1	0	0.0230192039	141808.917	141808.917	141808.917	141808.917	0	0	0	0	694394	0	0	3

@@ -1,0 +1,14 @@
+2021-Apr-28 02:24:40
+Computer name:	MCAE33
+Number of cores used in calculation:	4
+Configuration name:	Default
+Project name:	Project(1)
+
+Warnings on last iteration: 
+1. Negative pressure :
+	Minimum pressure=-23.3923 lbf/in^2; dV/V=21.9612
+2. A vortex crosses the pressure opening :
+	Boundary Condition : Outlet Total Pressure ; Inlet flow/outlet flow=0.117505
+	Boundary Condition : Outlet Total Pressure ; Inlet flow/outlet flow=0.117198
+	Boundary Condition : Outlet Total Pressure ; Inlet flow/outlet flow=0.118585
+	Boundary Condition : Outlet Total Pressure ; Inlet flow/outlet flow=0.110941
