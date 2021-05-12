@@ -1,0 +1,9 @@
+2021-Apr-28 05:18:51
+Computer name:	MCAE33
+Number of cores used in calculation:	4
+Configuration name:	Default
+Project name:	Project(1)
+
+Warnings on last iteration: 
+1. Negative pressure :
+	Minimum pressure=-23.2007 lbf/in^2; dV/V=5.1707
