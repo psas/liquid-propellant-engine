@@ -2,7 +2,7 @@
 **PARASOLID !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789**************************
 **PART1;
 MC=AMD64;
-MC_MODEL=Intel64 Family 6 Model 142 Stepping 10, GenuineIntel;
+MC_MODEL=AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD;
 MC_ID=unknown;
 OS=Windows_NT;
 OS_RELEASE=unknown;
@@ -14,7 +14,7 @@ FORMAT=text;
 GUISE=transmit;
 KEY=TopPlate;
 FILE=TopPlate.x_t;
-DATE=Fri Apr 16 13:21:56 2021;
+DATE=Wed May 19 10:49:53 2021;
 **PART2;
 SCH=SCH_3101290_31100;
 USFLD_SIZE=0;
